@@ -5,6 +5,7 @@ Spyder Editor
 This is a temporary script file.
 """
 
+# PANORAMA Data
 import json
  
 # Opening JSON file
@@ -18,6 +19,8 @@ dim_code = json.load(dim_code)
 elem = json.load(elem)
 extensions = json.load(extensions)
 
+# Historical Cobalt Data (Godoy León et. al, 2021)
+
 #%% Iterating through the json
 # list
 for i in elem['Co']:
@@ -29,3 +32,4 @@ for i in elem['Co']:
  
 # Closing file
 # f.close()
+
