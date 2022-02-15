@@ -35,6 +35,22 @@ def logistic(x, start, K, x_peak, r):
 import pandas as pd
 import numpy as np
 import matplotlib as plt
+import math
+# from explore_data import 
 
-kmf = KaplanMeierFitter()
-kmf.fit() 
+BACI_df = pd.read_csv('./Data/BACI_HS17_Y2017_V202102.csv')
+BACI_cobalt = BACI_df.loc[BACI_df['k'].isin([260500,282200,810520,810530,810590,])]
+
+def calculations(ISO_importer,ISO_exporter):
+    
+    Tij = BACI_cobalt['q'].loc[BACI_cobalt['i'].isin([ISO_importer]) & BACI_cobalt['j'].isin([ISO_exporter])].sum()
+    Ti = BACI_cobalt['q'].loc[BACI_cobalt['i'].isin([ISO_importer])].sum()
+    Tj = BACI_cobalt['q'].loc[BACI_cobalt['j'].isin([ISO_exporter])].sum()
+    T = Ti + Tj
+    
+    efficiency = (Tij/T)*math.log((Tij*T)/(Ti*Tj))
+    redundancy = (Tij/T)*math.log((Tij**2)/(Ti*Tj))
+    alpha = efficiency/(redundancy+efficiency)
+    theoretical_resilience = (-alpha)*math.log(alpha)
+
+    return efficiency,redundancy,alpha,theoretical_resilience
