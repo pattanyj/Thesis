@@ -78,15 +78,44 @@ theoretical_resilience = (-alpha)*np.log(alpha)
 
 # all_calc = [efficiency, redundancy, alpha]
 
+#%% Getting names of all cobalt products
 
+# import cobalt informaiton
+HS6_composition_df = pd.read_csv('./Data/compostions_balanced_Co.csv')
+prod_code_df = pd.read_csv('./Data/product_codes_HS17.csv')
 
+# merge df
+co_prod = BACI_df.merge(HS6_composition_df, left_on='k',right_on='HS6')
+co_prod = co_prod.drop(columns=['Prod','HS6','v'])
 
+#merge for names
+names = country_code_df.drop(columns=['country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
+#for exporters
+coprod_exp = co_prod.merge(names, left_on='i', right_on='country_code')
+coprod_exp = coprod_exp.drop(columns=['country_code'])
+coprod_exp = coprod_exp.rename({'country_name_full':'exporter'},axis='columns')
+#for importers
+coprod_imp = coprod_exp.merge(names,left_on='j', right_on='country_code')
+coprod_imp = coprod_imp.drop(columns=['country_code'])
+coprod_imp = coprod_imp.rename({'country_name_full':'importer'},axis='columns')
+#for productnames
+coprod_final = coprod_imp.merge(prod_code_df,left_on='k', right_on='code')
+coprod_final = coprod_final.drop(columns=['code'])
+coprod_final = coprod_final.rename({'description':'product'},axis='columns')
 
-
-
-
-
+#to csv
+prod_list_cobalt = coprod_final['product'].unique()
+prod_list_cobalt_DF = pd.DataFrame(prod_list_cobalt)
+prod_list_cobalt_DF = prod_list_cobalt_DF.merge(prod_code_df, left_on=0, right_on='description')
+prod_list_cobalt_DF = prod_list_cobalt_DF.merge(HS6_composition_df, left_on='code', right_on='HS6')
+prod_list_cobalt_DF = prod_list_cobalt_DF.drop(columns=['code','description','Prod',])
+prod_list_cobalt_DF = prod_list_cobalt_DF.rename({0:'prod_name'},axis='columns')
+BACI_prod_df = BACI_df.groupby('k').sum()
+prod_list_cobalt_DF = prod_list_cobalt_DF.merge(BACI_prod_df, left_on='HS6', right_index=True)
+prod_list_cobalt_DF = prod_list_cobalt_DF.drop(columns=['t','i','j','v',])
+prod_list_cobalt_DF['co_quantity'] = prod_list_cobalt_DF['Balance_mean']*prod_list_cobalt_DF['q']
+prod_list_cobalt_DF.to_csv('co_product_list.csv')
 
 #%% Trying Pyvis
 g = Network()
