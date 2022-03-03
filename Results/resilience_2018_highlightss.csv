@@ -1,0 +1,392 @@
+,product,prod_name,efficiency,redundancy,alpha,theoretical_resilience
+0,854810,"Waste and scrap of primary cells, primary batteries and electric accumulators: spent primary cells, spent primary batteries and spent electric accumulators",1.527885303,1.396691416,0.522429551,0.339195293
+1,850690,"Cells and batteries: primary, parts thereof",0.74051897,1.097173217,0.402961375,0.366257463
+2,853331,"Electrical resistors: wirewound variable, including rheostats and potentiometers, for a power handling capacity not exceeding 20W (excluding heating)",0.859771704,1.475820048,0.368117289,0.367879364
+3,853339,"Electrical resistors: wirewound variable, including rheostats and potentiometers, for a power handling capacity exceeding 20W (excluding heating)",1.165338615,2.577028349,0.311390793,0.363301689
+4,853340,"Electrical resistors: variable, including rheostats and potentiometers (excluding heating)",0.532644562,1.238297011,0.300769133,0.361347738
+5,850780,"Electric accumulators: other than lead-acid, nickel-cadmium, nickel-iron, nickel-metal hydride and lithium-ion, including separators, whether or not rectangular (including square)",1.157548157,2.771771184,0.294592538,0.360039836
+6,850730,"Electric accumulators: nickel-cadmium, including separators, whether or not rectangular (including square)",0.693809246,2.581126581,0.211854303,0.328767475
+7,850650,"Cells and batteries: primary, lithium",0.594981395,2.358782224,0.201431621,0.322754955
+8,850760,"Electric accumulators: lithium-ion, including separators, whether or not rectangular (including square)",0.296360436,1.521283644,0.163046462,0.295720641
+9,853329,"Electrical resistors: fixed, for a power handling capacity exceeding 20W (including rheostats and potentiometers but excluding heating resistors and carbon resistors)",0.553480409,3.16445578,0.148867646,0.283547856
+10,840690,Turbines: parts of steam and other vapour turbines,0.304578874,2.126138683,0.125304099,0.26025808
+11,850750,"Electric accumulators: nickel-metal hydride, including separators, whether or not rectangular (including square)",0.298229799,2.535072176,0.105258741,0.236972557
+12,840681,"Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output exceeding 40MW",0.139302379,1.217139247,0.102696921,0.233735434
+13,840682,"Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output not exceeding 40MW",0.173250549,1.849227487,0.085662512,0.210501915
+14,850511,"Magnets: permanent magnets and articles intended to become permanent magnets after magnetisation, of metal",0.904061071,2.696578663,0.251083457,0.346989779
+15,910812,"Watch movements: complete and assembled, electrically operated, by means of solar cells, with opto-electronic display",1.29550693,0.122422887,0.913660827,0.082499792
+16,840610,"Turbines: steam and other vapour turbines, for marine propulsion",0.895600852,1.021587318,0.467142905,0.355551837
+17,841199,Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers),0.696343853,2.425708563,0.223040411,0.334650347
+18,841191,Turbines: parts of turbo-jets and turbo-propellers,0.357378614,2.00849223,0.151055843,0.285511508
+19,260400,Nickel ores and concentrates,0.667696916,0.097552867,0.872521536,0.118983967
+20,260500,Cobalt ores and concentrates,0.532168329,0.089062417,0.85663553,0.132558126
+21,852321,"Magnetic media: cards incorporating a magnetic stripe, whether or not recorded, excluding products of Chapter 37",0.028137133,0.010782468,0.72295533,0.234532379
+22,844512,Textile machinery: combing machines for preparing textile fibres,0.833454766,0.330516636,0.716044024,0.239168462
+23,910990,"Clock movements: complete and assembled, other than electrically operated",1.889112385,0.763387606,0.712200713,0.241717722
+24,844511,Textile machinery: carding machines for preparing textile fibres,1.544272791,0.684888063,0.692759694,0.254292757
+25,844711,"Knitting machines: circular, with cylinder diameter not exceeding 165mm",1.407171314,0.728989224,0.658738559,0.27497628
+26,261800,"Slag, granulated (slag sand): from the manufacture or iron or steel",1.039367829,0.54130287,0.657548615,0.275668431
+27,845011,"Washing machines: household or laundry-type, fully-automatic, (of a dry linen capacity not exceeding 10kg)",1.398429901,0.759910984,0.647918923,0.281190145
+28,846019,"Machine-tools: flat-surface grinding machines, other than numerically controlled",1.59539915,0.885699377,0.64302128,0.283943704
+29,840212,Boilers: watertube boilers with a steam production not exceeding 45t per hour,1.619431135,0.910909519,0.640005184,0.285620875
+30,852341,"Optical media: unrecorded, excluding products of Chapter 37",1.281553904,0.823712843,0.608737066,0.302158118
+31,851511,"Brazing or soldering machines and apparatus: soldering irons and guns, whether or not capable of cutting",0.797199049,0.548319265,0.592484725,0.31012439
+32,900661,Photographic flashlight apparatus: discharge lamp (electronic),0.922309206,0.638435274,0.590941834,0.310857675
+33,845012,"Washing machines: household or laundry-type, with built-in centrifugal drier, (not fully-automatic), of a dry linen capacity not exceeding 10kg",1.327190679,0.937802995,0.585957786,0.313198849
+34,851950,Sound recording or reproducing apparatus: telephone answering machines,1.260122904,0.902217678,0.582758754,0.314679225
+35,844720,"Knitting machines: flat, stitch-bonding machines",1.526944232,1.112150518,0.578586363,0.316583628
+36,691410,Ceramic articles n.e.c. in chapter 69: of porcelain or china,1.117331996,0.839411666,0.571016029,0.319961978
+37,847021,"Calculating machines: electronic, incorporating a printing device, needing an external source of power",0.988082362,0.751961694,0.567849049,0.321345581
+38,845931,"Machine-tools: for boring-milling by removing metal, numerically controlled",1.017913763,0.805409339,0.558273935,0.325420955
+39,900850,"Image projectors, photographic enlargers and reducers, excluding cinematographic",0.677776182,0.546200442,0.553749286,0.327289776
+40,910212,"Wrist-watches: electrically operated, with or without a stop-watch, (other than those of heading no. 9101) with opto-electronic display only",1.020212587,0.822930398,0.553517874,0.327384365
+41,852849,"Monitors: cathode-ray tube, n.e.c. in subheading 8528.42, whether or not colour",1.202001992,0.972416036,0.552792507,0.32768023
+42,262190,Slag and ash n.e.c. in chapter 26: including seaweed ash (kelp) but excluding ash and residues from the incineration of municipal waste,1.029586173,0.885970916,0.537486551,0.333699353
+43,844712,"Knitting machines: circular, with cylinder diameter exceeding 165mm",1.180940394,1.017201304,0.53724489,0.333790924
+44,262099,"Slag, ash and residues: (not from the manufacture of iron or steel), containing mainly metals or their compounds, n.e.c. in heading no. 2620",1.327326165,1.144514796,0.536978789,0.333891631
+45,845921,"Machine-tools: for drilling by removing metal, numerically controlled",0.439860746,0.379546233,0.536803758,0.333957799
+46,842831,"Elevators and conveyors: continuous-action, for goods and materials, specially designed for underground use, n.e.c. in item no. 8428.20",0.963772792,0.883055367,0.521852987,0.339397196
+47,846120,"Machine-tools: shaping or slotting machines, working by removing metal, sintered metal carbides or cermets",1.332680379,1.231172868,0.519795889,0.34011236
+48,845899,"Lathes: for removing metal, other than horizontal or numerically controlled lathes",0.608975361,0.56377625,0.519270539,0.340293698
+49,844629,"Weaving machines (looms): for weaving fabrics of a width exceeding 30cm, shuttle type, other than power looms",0.924502544,0.861643581,0.517596255,0.340868071
+50,841891,"Refrigerating or freezing equipment: parts, furniture designed to receive refrigerating or freezing equipment",1.464178059,1.369978037,0.516618707,0.341200922
+51,845121,Drying machines: of a dry linen capacity not exceeding 10kg,0.911396108,0.860923321,0.51423919,0.342003398
+52,910910,"Clock movements: complete and assembled, electrically operated",0.940898622,0.905349811,0.50962731,0.343527327
+53,845019,"Washing machines: household or laundry-type, not fully-automatic, without built-in centrifugal drier, of a dry linen capacity not exceeding 10kg",0.894871904,0.866656168,0.508008881,0.34405224
+54,910229,"Wrist-watches: whether or not incorporating a stop-watch facility, with other than automatic winding",1.416564757,1.391886456,0.504393578,0.345206161
+55,844317,Printing machinery: gravure,0.526520829,0.518345733,0.503912029,0.345357909
+56,845959,"Machine-tools: for milling by removing metal, knee-type, other than numerically controlled",1.359914495,1.350429499,0.501749777,0.346033608
+57,320710,"Pigments: prepared pigments, opacifiers, colours and similar preparations",0.997871068,1.010288403,0.49690828,0.347512715
+58,845090,Washing machines: parts for household or laundry-type,1.30897441,1.407434387,0.481876812,0.35180225
+59,851519,"Brazing or soldering machines and apparatus: other than soldering irons and guns, whether or not capable of cutting",1.700005247,1.872203457,0.475897515,0.35337901
+60,910119,"Wrist-watches: electrically operated, with or without a stop-watch, with case of precious metal or metal clad with precious metal, without mechanical display",1.112720825,1.261484288,0.468670891,0.355184335
+61,844513,Textile machinery: drawing or roving machines for preparing textile fibres,0.41611423,0.475731113,0.466576669,0.355686756
+62,844590,Textile machinery: involved in textile fibre or textile yarn preparation and n.e.c. in heading no. 8445,1.260960833,1.448144593,0.465452847,0.355952497
+63,847010,"Calculating machines: electronic calculators capable of operation without an external source of electric power and pocket-size data recording, reproducing and displaying machines with calculating functions",1.122353793,1.296021342,0.464094167,0.356270149
+64,852729,"Radio-broadcast receivers not capable of operating without an external source of power, of a kind used in motor vehicles: not combined with sound recording or reproducing apparatus",0.920379833,1.096202054,0.456405881,0.357992348
+65,820720,"Tools, interchangeable: (for machine or hand tools, whether or not power-operated), dies for drawing or extruding metal",1.166118795,1.402877099,0.45392007,0.358521574
+66,844610,Weaving machines (looms): for weaving fabrics of a width 30cm or less,0.625561857,0.763572243,0.450325031,0.359262855
+67,847029,"Calculating machines: electronic, (not incorporating a printing device), needing an external power source",0.844271399,1.04239328,0.447494146,0.359826384
+68,844311,"Printing machinery: offset, reel-fed",1.181581381,1.473166825,0.445082279,0.360292377
+69,810530,Cobalt: waste and scrap,0.958796532,1.221817655,0.439691046,0.361286643
+70,844519,"Textile machinery: n.e.c. in heading no. 8445, for preparing textile fibres",0.908445024,1.161414255,0.438892167,0.361428371
+71,910299,"Pocket watches and other watches, including stop-watches: (excluding wrist-watches), other than those of heading no. 9101, other than electrically operated",1.343933816,1.759337814,0.433069991,0.362417187
+72,910191,"Pocket-watches and other watches, including stop-watches: (excluding wrist-watches), with case of precious metal or of metal clad with precious metal, electrically operated",1.247381413,1.647486479,0.430894072,0.362766699
+73,847050,Cash registers,1.47707665,1.982206783,0.426989196,0.363366341
+74,910310,"Clocks: with watch movements, electrically operated, excluding clocks of heading no. 9104",1.26393998,1.703938524,0.425873222,0.363531165
+75,852871,"Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus: not designed to incorporate a video display or screen",1.316955624,1.790018236,0.423870841,0.363819571
+76,901813,"Medical, surgical instruments and appliances: magnetic resonance imaging apparatus",1.091430967,1.486426997,0.423386774,0.363887874
+77,910700,"Time switches: with clock, watch movement or synchronous motor",1.375384436,1.884982762,0.42184955,0.364101108
+78,851210,"Lighting or visual signalling equipment: electrical, of a kind used on bicycles, excluding articles of heading no. 8539",1.361340893,1.885175769,0.41932355,0.364439323
+79,845210,Sewing machines: of the household type,0.400989027,0.556675474,0.418715559,0.36451846
+80,841510,"Air conditioning machines: comprising a motor-driven fan and elements for changing the temperature and humidity, of a kind designed to be fixed to a window, wall, ceiling or floor, self-contained or """"split-system"""" ",0.909950772,1.263894832,0.418590341,0.364534649
+81,261790,Ores and concentrates n.e.c. in chapter 26: other than antimony,0.217055042,0.30245267,0.417809085,0.364634809
+82,901050,"Photographic laboratory apparatus and equipment: n.e.c. in item no. 9010.10, for photographic (including cinematographic) laboratories: negatoscopes",0.44361292,0.619894555,0.417122522,0.364721623
+83,846190,"Machine-tools: planing machines, and other machine-tools n.e.c. in heading no. 8461: working by removing metal, sinistered metal carbides or cerments.",1.098117259,1.548931213,0.41484592,0.365001396
+84,910819,"Watch movements: complete and assembled, electrically operated, by means of solar cells, without mechanical display or device including such or opto-electronic display",0.795456878,1.135657214,0.411916044,0.365343056
+85,844312,"Printing machinery: offset, sheet-fed, office type (sheet size not exceeding 22 x 36cm in the unfolded state)",0.913791039,1.315541714,0.409894413,0.365566661
+86,690919,"Ceramic wares: for laboratory, chemical or other technical uses, other than articles having a hardness equivalent to 9 or more on the Mohs scale or of porcelain or china",1.020868751,1.487791912,0.40693776,0.365875717
+87,820510,"Tools, hand: drilling, threading or tapping tools",1.544447249,2.254405885,0.406556188,0.365914041
+88,842112,Centrifuges: clothes-dryers,0.809593122,1.183203136,0.406259857,0.365943556
+89,851529,"Welding machines and apparatus: for resistance welding of metal, other than fully or partly automatic, whether or not capable of cutting",1.452679597,2.171733372,0.400804105,0.366448174
+90,720441,"Ferrous waste and scrap: turnings, shavings, chips, milling waste, sawdust, fillings, trimmings and stampings, whether or not in bundles",1.133899327,1.709798637,0.398741125,0.366619689
+91,250100,Salt (including table salt and denatured salt): pure sodium chloride whether or not in aqueous solution: sea water,1.063436267,1.620857051,0.396169919,0.36681851
+92,900659,"Cameras, photographic (excluding cinematographic): n.e.c. in heading no 9006",0.893699919,1.366255929,0.395450168,0.366871181
+93,846090,"Machine-tools: for deburring, grinding, polishing or otherwise finishing metal, sintered metal carbides or cermets by means of grinding stones, abrasives or polishing products, n.e.c. in heading no. 8460",0.981580464,1.517448849,0.392784694,0.36705481
+94,851633,Hand-drying apparatus: electro-thermic,1.179417438,1.82953469,0.391969492,0.367107364
+95,846029,"Machine-tools: grinding machines (excluding flat-surface), other than numerically controlled",1.388105425,2.16213245,0.390989414,0.367168303
+96,261900,"Slag, dross: (other than granulated slag), scalings and other waste from the manufacture of iron or steel",0.843916908,1.323696488,0.389329993,0.367265877
+97,841821,"Refrigerators: for household use, compression-type, electric or other",1.012193936,1.602046211,0.387184757,0.367381531
+98,283720,Complex cyanides,0.847834642,1.346844464,0.386313716,0.367425101
+99,845129,Drying machines: of a dry linen capacity exceeding 10kg,0.958091342,1.525595039,0.385753753,0.367452075
+100,841420,Pumps: hand or foot-operated air pumps,1.030240354,1.653700863,0.383853546,0.36753754
+101,691190,"Household and toilet articles: n.e.c. in heading no. 6911, of porcelain or china",1.438362296,2.365086601,0.378173162,0.36773675
+102,854290,Parts of electronic integrated circuits,1.057110074,1.74220606,0.377631544,0.367751309
+103,841830,"Freezers: of the chest type, not exceeding 800l capacity",1.226610199,2.024731247,0.377262807,0.367760777
+104,852560,"Transmission apparatus for radio-broadcasting or television, whether or not incorporating sound recording or reproducing apparatus, incorporating reception apparatus",1.23607983,2.052353644,0.375887133,0.367792914
+105,852190,Video recording or reproducing apparatus: other than magnetic tape-type,1.179366458,1.959875909,0.37568506,0.367797211
+106,851610,"Heaters: electric, instantaneous or storage water and immersion heaters",1.246820166,2.087684124,0.373914698,0.367830204
+107,845951,"Machine-tools: for milling by removing metal, knee-type, numerically controlled",0.822734226,1.383243931,0.372956651,0.367844565
+108,851711,Line telephone sets with cordless handsets,1.098312254,1.881693191,0.368560486,0.367878811
+109,720449,Ferrous waste and scrap: n.e.c. in heading no. 7204,1.105413335,1.906134321,0.367058224,0.367878524
+110,851660,"Ovens, cookers, cooking plates, boiling rings, grillers and roasters: of a kind used for domestic purposes (excluding microwaves)",1.206585931,2.093439044,0.365629333,0.367872546
+111,845970,Machine-tools: for threading or tapping by removing metal,1.179142232,2.054717248,0.364623831,0.367864993
+112,851650,"Ovens: microwave, of a kind used for domestic purposes",1.319104025,2.314313258,0.363047765,0.367847572
+113,852713,"Radio broadcast receivers capable of operating without an external power source: apparatus (other than pocket-size radio cassette-players), combined with sound recording or reproducing apparatus",1.07760809,1.906100857,0.361163944,0.36781777
+114,910811,"Watch movements: complete and assembled, electrically operated, with mechanical display only or with a device to which a mechanical display can be incorporated",0.953897771,1.704137931,0.358873197,0.367768287
+115,853949,"Lamps: ultra-violet or infra-red lamps, (excluding arc-lamps)",0.99348141,1.779988482,0.358208832,0.367751205
+116,845969,"Machine-tools: for milling by removing metal, not knee-type, other than numerically controlled",1.339949399,2.409874287,0.357336641,0.367726908
+117,840219,"Boilers: vapour generating boilers, including hybrid boilers n.e.c. in heading no. 8402",1.289540547,2.320463195,0.357213078,0.367723293
+118,844400,"Textile machinery: for extruding, drawing, texturing or cutting man-made textile materials",1.068106847,1.965137752,0.352133437,0.367537547
+119,821520,"Cutlery: sets of assorted articles (e.g. spoons, forks, ladles, skimmers, cake-servers, fish-knives, butter knives, sugar tongs and similar), not plated with precious metal",1.235189876,2.27782946,0.351603495,0.367513966
+120,841460,"Hoods: ventilating or recycling hoods incorporating a fan, whether or not fitted with filters, having a maximum horizontal side not exceeding 120cm",0.977338396,1.808422474,0.350833557,0.367478281
+121,750712,"Nickel: tubes and pipes, of nickel alloys",1.111172775,2.072625003,0.349008591,0.367386944
+122,841451,"Fans: table, floor, wall, window, ceiling or roof fans, with a self-contained electric motor of an output not exceeding 125W",1.234848596,2.324502783,0.346930793,0.367271332
+123,840211,Boilers: watertube boilers with a steam production exceeding 45t per hour,0.426430686,0.809980587,0.344893884,0.367145917
+124,844530,Textile machinery: doubling or twisting machines,0.630857693,1.21419354,0.341918794,0.3669411
+125,847290,Office machines: not elsewhere classified,0.994739595,1.927582446,0.340393557,0.366826073
+126,845939,"Machine-tools: for boring-milling by removing metal, other than numerically controlled",0.947121331,1.851866897,0.338379891,0.366663739
+127,846040,Machine-tools: for honing or lapping,0.526548372,1.029664712,0.338352362,0.366661436
+128,282739,"Chlorides: other than of ammonium, calcium, magnesium, aluminium and nickel",0.813076462,1.59431691,0.337741422,0.366609769
+129,910111,"Wrist-watches: electrically operated, with or without a stop-watch, with case of precious metal or of metal clad with precious metal, with mechanical display only",0.886000867,1.742197778,0.337113356,0.366555501
+130,847210,Office machines: duplicating machines,0.754133325,1.484072589,0.336936526,0.366540011
+131,381590,"Reaction initiators, reaction accelerators and catalytic preparations, unsupported, n.e.c. or included",1.084592936,2.17188902,0.333056639,0.366176696
+132,720429,Ferrous waste and scrap: of alloy steel (excluding stainless),0.990915659,1.984687388,0.33301339,0.366172392
+133,870490,"Vehicles: for transport of goods, n.e.c. in heading no. 8704",1.059110904,2.122446531,0.332890707,0.366160154
+134,852792,Radio-broadcast receivers n.e.c. in heading no. 8527: not combined with sound recording or reproducing apparatus but combined with a clock,0.975808142,1.956766046,0.332747982,0.366145859
+135,910221,"Wrist-watches: whether or not incorporating a stop-watch facility, with automatic winding",1.12858027,2.263258559,0.33273405,0.36614446
+136,283699,Carbonates: n.e.c. in heading no. 2836 and other than lithium or strontium,1.051346749,2.108938564,0.332674631,0.366138489
+137,844339,"Printing, copying, and facsimile machines: single-function printing, copying or facsimile machines, not capable of connecting to an automatic data processing machine or to a network",0.996167175,2.029500951,0.329238744,0.365775067
+138,870322,"Vehicles: with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1000 but not over 1500cc",0.978889402,1.996612329,0.328982972,0.365746584
+139,851631,Hair-dressing apparatus: electro-thermic hair dryers,1.117341633,2.283901381,0.328509791,0.365693366
+140,880220,Aeroplanes and other aircraft: of an unladen weight not exceeding 2000kg,1.122874162,2.326789373,0.325502516,0.36533917
+141,381512,"Catalysts, supported: reaction initiators, reaction accelerators and catalytic preparations, with precious metal or precious metal compounds as the active substance, n.e.c. or included",0.789689905,1.641100844,0.324869553,0.365261089
+142,844315,"Printing machinery: letterpress, other than reel-fed, excluding flexographic printing",0.760592735,1.59375494,0.3230588,0.365030899
+143,842211,Dish washing machines: of the household type,0.757953934,1.595077712,0.322118037,0.364907303
+144,841581,"Air conditioning machines: containing a motor driven fan, other than window or wall types, incorporating a refrigerating unit and a valve for reversal of the cooling/heat cycle (reversible heat pumps)",1.098136589,2.314179209,0.321815639,0.364866992
+145,845720,"Machines: unit construction machines (single station), for working metal",0.563741719,1.189977721,0.321454907,0.364818532
+146,851010,Shavers: with self-contained electric motor,0.757847708,1.618766197,0.318877082,0.364460425
+147,852351,"Semiconductor media: solid-state non-volatile storage devices, whether or not recorded, excluding products of Chapter 37",1.055967282,2.25982718,0.318465844,0.364401373
+148,722790,"Steel, alloy: bars and rods, hot-rolled, in irregularly wound coils, n.e.c. in heading no. 7227",0.841085068,1.818713547,0.316221335,0.364069697
+149,950450,"Games: video game consoles and machines, other than those of subheading 9504.30",1.016865111,2.208104321,0.31531,0.363930486
+150,820730,"Tools, interchangeable: (for machine or hand tools, whether or not power-operated), tools for pressing, stamping or punching",0.996970997,2.187929627,0.313030488,0.363570728
+151,630110,Blankets: electric,0.949242933,2.08717063,0.312619778,0.363504147
+152,852859,"Monitors other than cathode-ray tube: n.e.c. in subheading 8528.52, whether or not colour",1.181335041,2.609895174,0.311596757,0.363335957
+153,851310,"Lamps: portable, electric, designed to function by their own source of energy (excluding lighting equipment of heading no. 8512)",1.115809497,2.47019063,0.311157127,0.363262648
+154,910291,"Pocket watches and other watches, including stop-watches: (excluding wrist-watches), other than those of heading no. 9101, electrically operated",1.084465588,2.407155553,0.310590853,0.363167306
+155,870421,"Vehicles: compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",0.927267562,2.064397509,0.309950325,0.363058217
+156,851890,"Microphones, headphones, earphones, amplifier equipment: parts of the equipment of heading no. 8518",0.693889541,1.546490691,0.309719543,0.363018588
+157,291711,"Acids: acyclic polycarboxylic acids: oxalic acid, its salts and esters",0.874450546,1.957012123,0.308833507,0.362864843
+158,901841,"Dental instruments and appliances: dental drill engines, whether or not combined on a single base with other dental equipment",1.040887596,2.334649803,0.308362039,0.362781998
+159,842820,Elevators and conveyors: pneumatic,1.123642353,2.528037809,0.307705578,0.362665446
+160,910890,"Watch movements: complete and assembled, not automatic winding or electrically operated",0.434132231,0.982071154,0.306546528,0.362456241
+161,844540,Textile machinery: winding (including weft-winding) or reeling machines,0.921537142,2.101914533,0.304796386,0.362132034
+162,870333,"Vehicles: with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 2500cc",1.128546571,2.575680681,0.304664507,0.362107198
+163,852110,Video recording or reproducing apparatus: magnetic tape-type,0.841316805,1.938578379,0.302643355,0.361719402
+164,851632,"Hair-dressing apparatus: electro-thermic, other than hair dryers",1.045804125,2.418622149,0.301869355,0.361567327
+165,847130,"Automatic data processing machines: portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",0.959114613,2.222830908,0.301423958,0.361478916
+166,910519,"Clocks: (excluding those with watch movements and instrument panel clocks), alarm clocks, other than electrically operated",0.679209787,1.582179898,0.300350617,0.361263153
+167,910599,"Clocks: (excluding those with watch movements and instrument panel clocks), other than alarm or wall clocks, other than electrically operated",1.038450256,2.431698149,0.299252405,0.36103842
+168,841810,"Refrigerators and freezers: combined refrigerator-freezers, fitted with separate external doors, electric or other",1.036063852,2.433117876,0.298647904,0.360912999
+169,842832,"Elevators and conveyors: continuous-action, for goods or materials, bucket type, n.e.c. in item no. 8428.20 or 8428.31",0.867096347,2.037208187,0.298555588,0.360893738
+170,870431,"Vehicles: spark-ignition internal combustion piston engine, for transport of goods, (of a g.v.w. not exceeding 5 tonnes), n.e.c. in item no 8704.1",0.652939881,1.536766997,0.298185975,0.360816334
+171,810590,Cobalt: articles n.e.c. in heading no. 8105,0.6630223,1.56818497,0.297158542,0.360598762
+172,722530,"Steel, alloy: flat-rolled, width 600mm or more, hot-rolled, in coils",0.817313775,1.952917679,0.295034472,0.360137686
+173,820810,"Tools: knives and cutting blades, for machines or for mechanical appliances, for metal working",1.053578386,2.529611363,0.294033657,0.359915144
+174,845910,"Machine-tools: way-type unit head machines, for drilling, boring, milling, threading or tapping by removing metal, other than lathes of heading no. 8458",0.193246876,0.464611281,0.293751585,0.359851807
+175,820780,"Tools, interchangeable: (for machine or hand tools, whether or not power-operated), for turning",0.73335684,1.76417261,0.29363291,0.359825079
+176,851020,Hair clippers: with a self-contained electric motor,0.985818958,2.378337956,0.293035962,0.359689904
+177,844790,"Machines: for making gimped yarn, tulle, lace, embroidery, trimmings, braid or net and machines for tufting",0.909234925,2.208190585,0.291662117,0.359374184
+178,721810,"Steel, stainless: ingots and other primary forms",0.504169095,1.22464916,0.29162643,0.359365897
+179,722830,"Steel, alloy: bars and rods, hot-rolled, hot-drawn or extruded",0.978877122,2.391294449,0.290453201,0.359091014
+180,844316,Printing machinery: flexographic,0.966569711,2.405014559,0.286681166,0.358175034
+181,851640,Smoothing irons: electric,0.937396533,2.337807779,0.286210094,0.358057169
+182,880230,"Aeroplanes and other aircraft: of an unladen weight exceeding 2000kg but not exceeding 15,000kg",0.892116653,2.252831085,0.283666607,0.357407344
+183,845730,"Metal machines: multi-station transfer machines, for working metal",0.775311111,1.980963622,0.281289489,0.356779411
+184,750220,"Nickel: unwrought, alloys",0.656431534,1.686469642,0.280178926,0.356479173
+185,844520,Textile machinery: spinning machines,0.663217412,1.71441162,0.27894066,0.356139219
+186,260600,Aluminium ores and concentrates,0.3126376,0.808976192,0.278739083,0.356083359
+187,901010,Photographic laboratory apparatus and equipment: for automatically developing photographic (including cinematographic) film or paper in rolls or for automatically exposing developed film to rolls of paper,0.845856892,2.207669545,0.277009847,0.355598157
+188,847170,Units of automatic data processing machines: storage units,0.942201202,2.477791922,0.275497981,0.355165104
+189,910529,"Clocks: (excluding those with watch movements and instrument panel clocks), wall clocks, other than electrically operated",0.824621576,2.182993637,0.274177884,0.354780197
+190,660390,"Trimmings, accessories and parts of articles of heading no. 6601 or 6602: n.e.c. in heading no. 6603",0.637423381,1.694776555,0.273314209,0.354524934
+191,720450,Ferrous products: remelting scrap ingots,0.244051365,0.649219362,0.273210973,0.354494239
+192,750512,"Nickel: bars, rods and profiles, of nickel alloys",0.632893384,1.689242484,0.272547956,0.354296179
+193,852580,"Television cameras, digital cameras and video camera recorders",1.042934215,2.78865184,0.272193864,0.354189743
+194,841583,"Air conditioning machines: containing a motor driven fan, other than window or wall types, not incorporating a refrigerating unit",0.885980975,2.371910618,0.271949188,0.354115926
+195,940530,Lighting sets: of a kind used for Christmas trees,0.808472268,2.170788275,0.271366756,0.353939326
+196,846140,"Machine-tools: gear cutting, gear grinding or gear finishing machines, working by removing metal, sintered metal carbides or cermets",0.750701051,2.023431757,0.270607467,0.353707223
+197,847150,"Units of automatic data processing machines: processing units other than those of item no. 8471.41 or 8471.49, whether or not containing in the same housing one or two of the following types of unit: storage units, input units or output units",0.806711609,2.188366842,0.269345736,0.353316817
+198,910390,"Clocks: with watch movements, other than electrically operated, excluding clocks of heading no. 9104",0.737773562,2.00477809,0.269009906,0.35321191
+199,820740,"Tools, interchangeable: (for machine or hand tools, whether or not power-operated), tools for tapping or threading",1.038482023,2.826043699,0.268721726,0.353121553
+200,870321,"Vehicles: with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity not over 1000cc",0.755313713,2.058784321,0.268403483,0.353021411
+201,841829,"Refrigerators: household, electric or not, other than compression-type",0.985031856,2.694823284,0.267682237,0.352793058
+202,851712,Telephones for cellular networks or for other wireless networks,0.936214917,2.56487005,0.267407083,0.35270543
+203,900669,Photographic flashlight apparatus: n.e.c. in heading no. 9006,0.651438586,1.785844955,0.267280591,0.352665052
+204,852872,"Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus: incorporating a colour video display or screen",1.031419681,2.84820693,0.265855399,0.352205959
+205,842219,Dish washing machines: of other than household type,0.767793945,2.124659065,0.265447336,0.352073105
+206,841582,"Air conditioning machines: containing a motor driven fan, other than window or wall types, incorporating a refrigerating unit",0.987230749,2.776677005,0.262288774,0.351023477
+207,283529,"Phosphates: (other than of mono- or disodium, other than of potassium or of calcium hydrogenorthophosphate (dicalcium phosphate) and excluding other phosphates of calcium), whether or not chemically defined",0.743941725,2.106481144,0.260993459,0.350582056
+208,844331,"Printing, copying, and facsimile machines: machines which perform two or more of the functions of printing, copying or facsimile transmission, capable of connecting to an automatic data processing machine or to a network",0.996917439,2.842733625,0.259637509,0.350113085
+209,846390,"Machine-tools: for working metal, sintered metal carbides or cermets, without removing material, n.e.c. in heading no. 8463",0.827491087,2.406792383,0.255849895,0.348765457
+210,847090,Machines incorporating a calculating device: n.e.c. in heading no. 8470,0.917256464,2.732577374,0.251314582,0.347077956
+211,852329,"Magnetic media: other than cards incorporating a magnetic stripe, whether or not recorded, excluding products of Chapter 37",0.852113478,2.546273375,0.250740576,0.346858575
+212,262030,"Slag, ash and residues: (not from the manufacture of iron or steel), containing mainly copper",0.318664633,0.954123695,0.250367344,0.346715223
+213,901814,"Medical, surgical instruments and appliances: scintigraphic apparatus",0.410363539,1.23034864,0.250113057,0.346617238
+214,851718,Telephone sets n.e.c. in item no. 8517.1,0.885845189,2.657815927,0.249980221,0.346565949
+215,841899,"Refrigerating or freezing equipment: parts thereof, other than furniture",0.956003098,2.882558864,0.249052408,0.346205743
+216,845929,"Machine-tools: for drilling by removing metal, other than numerically controlled",0.834638116,2.519542009,0.24883521,0.346120921
+217,711510,"Metal: catalysts in the form of wire cloth or grill, of platinum",0.45877471,1.38537405,0.248773158,0.346096653
+218,850940,"Electro-mechanical domestic appliances: food grinders and mixers, fruit or vegetable juice extractors, with self-contained electric motor",0.856480213,2.606260563,0.247341707,0.345532523
+219,950490,"Games: articles for funfair, table or parlour games, including pintables, special tables for casino games, automatic bowling alley equipment, n.e.c. in heading 9504",0.862294874,2.630182545,0.24690063,0.345357029
+220,720270,Ferro-alloys: ferro-molybdenum,0.613913709,1.87418202,0.24674039,0.345293078
+221,291570,"Acids: saturated acyclic monocarboxylic acids: palmitic acid, stearic acid, their salts and esters",0.688741152,2.107837041,0.246279955,0.345108742
+222,852359,"Semiconductor media: other than smart cards, whether or not recorded, excluding products of Chapter 37",0.871778108,2.689519823,0.244792243,0.344507241
+223,920790,"Musical instruments: (other than keyboard), the sound of which is produced or must be amplified electrically",0.762528708,2.352484162,0.244791511,0.344506943
+224,851769,"Communication apparatus (excluding telephone sets or base stations): machines for the transmission or reception of voice, images or other data (including wired/wireless networks), n.e.c. in item no. 8517.6",0.983261624,3.047346663,0.243948693,0.34416217
+225,870323,"Vehicles: with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",0.892681894,2.779526893,0.243091269,0.343808434
+226,851629,Heating apparatus: electric soil heating apparatus and space heating apparatus (excluding storage heating radiators),0.875463858,2.740447092,0.24211433,0.343401704
+227,853941,Lamps: arc-lamps,0.738584979,2.320393792,0.24144822,0.343122123
+228,910219,"Wrist-watches: electrically operated, with or without a stop-watch, (other than those of heading no. 9101) without mechanical or opto-electronic display",0.694573609,2.184444041,0.241253682,0.343040125
+229,848640,"Machines and apparatus of a kind used solely or principally for the manufacture or repair of masks and reticles, assembling semiconductor devices or electronic integrated circuits, or for lifting, handling, loading or unloading items of heading 8486",0.678462817,2.136745739,0.240999132,0.342932594
+230,842810,Lifts and skip hoists,0.765829024,2.415984421,0.24068948,0.342801424
+231,851770,"Telephone sets and other apparatus for the transmission or reception of voice, images or other data, via a wired or wireless network: parts",1.040729368,3.298051859,0.239866754,0.342450977
+232,854232,Electronic integrated circuits: memories,0.838612732,2.661746048,0.239579079,0.342327774
+233,852380,"Media n.e.c. in heading 8523, whether or not recorded, excluding products of Chapter 37",0.729174141,2.315574302,0.239485841,0.342287768
+234,282760,Iodides and iodide oxides,0.648587529,2.074359111,0.238193257,0.341729418
+235,950300,"Tricycles, scooters, pedal cars and similar wheeled toys: dolls' carriages: dolls: other toys: reduced-size (scale) models and similar recreational models, working or not: puzzles of all kinds",0.876187,2.806133157,0.237944275,0.341621062
+236,850860,"Vacuum cleaners, other than with a self-contained electric motor",0.861718692,2.767231554,0.237456739,0.341408134
+237,851822,"Loudspeakers: multiple, mounted in the same enclosure",0.744212126,2.407385751,0.236138034,0.340827176
+238,381519,"Catalysts, supported: reaction initiators, reaction accelerators and catalytic preparations, with an active substance other than nickel or precious metals or their compounds, n.e.c. or included",0.73450606,2.379176854,0.23589623,0.340719851
+239,852719,Radio broadcast receivers capable of operating without an external power source: n.e.c. in item no. 8527.1,0.75357269,2.443750355,0.235688631,0.34062751
+240,842840,Escalators and moving walkways,0.679168966,2.205212293,0.235464353,0.340527545
+241,820540,"Tools, hand: screwdrivers",0.81638696,2.666427184,0.2344044,0.340052209
+242,851671,"Electro-thermic appliances: coffee or tea makers, of a kind used for domestic purposes",0.79212279,2.593282779,0.233981653,0.339861293
+243,851679,"Electro-thermic appliances: n.e.c. in heading no. 8516, used for domestic purposes",0.817959617,2.681159991,0.233761548,0.339761589
+244,920710,"Musical instruments: keyboard, (other than accordions), the sound of which is produced or must be amplified electrically",0.584185446,1.919010162,0.233375867,0.339586382
+245,851830,"Headphones and earphones, whether or not combined with a microphone, and sets consisting of a microphone and one or more loudspeakers",0.753364231,2.487023144,0.232492028,0.339182467
+246,910591,"Clocks: (excluding those with watch movements and instrument panel clocks), (other than alarm or wall clocks), electrically operated",0.58781793,1.944392172,0.232136318,0.33901896
+247,851672,"Electro-thermic appliances: toasters, of a kind used for domestic purposes",0.751488966,2.50717467,0.230612622,0.338312392
+248,870310,"Vehicles: specially designed for travelling on snow, golf cars and similar vehicles",0.724535968,2.428317459,0.229803251,0.337932981
+249,901060,Photographic laboratory apparatus and equipment (including cinematographic): projection screens,0.696646891,2.343854353,0.229122383,0.337611601
+250,851621,Heating apparatus: electric storage heating radiators,0.383673022,1.294702987,0.228597775,0.337362599
+251,722490,"Steel, alloy: semi-finished products",0.240252146,0.812899574,0.228126813,0.337138034
+252,900710,"Cameras, cinematographic: whether or not incorporating sound recording apparatus",0.924559224,3.151336272,0.226835851,0.336517483
+253,845961,"Machine-tools: for milling by removing metal, (not knee-type), numerically controlled",0.669479293,2.293711996,0.225931851,0.336078569
+254,840991,"Engines: parts, suitable for use solely or principally with spark-ignition internal combustion piston engines (for other than aircraft)",0.65259312,2.242126213,0.225442623,0.33583953
+255,260300,Copper ores and concentrates,0.661684308,2.299925997,0.22342045,0.334840197
+256,846039,"Machine-tools: sharpening (tool or cutter grinding) machines, other than numerically controlled",0.718856624,2.535300275,0.220904107,0.333571073
+257,901910,Mechano-therapy appliances: massage apparatus and psychological aptitude-testing apparatus,0.764393705,2.715453425,0.219663013,0.332934589
+258,750620,"Nickel: plates, sheets, strip and foil, of nickel alloys",0.638704116,2.288468044,0.218198343,0.332174422
+259,820291,"Tools, hand: straight saw blades, for working metal",0.770193284,2.778387963,0.217042596,0.33156765
+260,854233,Electronic integrated circuits: amplifiers,0.714702823,2.617569271,0.214479131,0.33019981
+261,841410,Pumps: vacuum,0.780987922,2.871774063,0.213807504,0.329836385
+262,844313,"Printing machinery: offset, n.e.c. in item no. 8443.1",0.843582416,3.117691663,0.212957346,0.32937333
+263,722710,"Steel, alloy: bars and rods, hot-rolled, in irregularly wound coils, of high speed steel",0.380255869,1.406998677,0.212759772,0.329265232
+264,845819,"Lathes: for removing metal, horizontal, other than numerically controlled",0.804254002,2.982541198,0.212383812,0.329059027
+265,852721,"Radio-broadcast receivers not capable of operating without an external source of power, of a kind used in motor vehicles: combined with sound recording or reproducing apparatus",0.662098339,2.473024909,0.21118734,0.328398356
+266,840710,"Engines: for aircraft, spark-ignition reciprocating or rotary internal combustion piston engines",0.761518159,2.863654516,0.210063969,0.327771881
+267,691310,"Ceramic statuettes and other ornamental ceramic articles, of porcelain or china",0.697315563,2.624535281,0.209917783,0.327689916
+268,842833,"Elevators and conveyors: continuous-action, for goods or materials, belt type, n.e.c. in item no. 8428.20 or 8428.31",0.789540502,2.976323048,0.209657225,0.327543571
+269,853120,"Signalling apparatus: electric, sound or visual, indicator panels incorporating liquid crystal devices (LCD) or light-emitting diodes (LED), excluding those of heading no. 8512 or 8530",0.804825651,3.036409351,0.209522628,0.327467846
+270,283429,Nitrates: of other than potassium,0.584996599,2.209274253,0.209355724,0.327373826
+271,842310,Weighing machines: personal (including baby scales) and household scales,0.622122452,2.372706733,0.207732199,0.3264523
+272,691010,"Ceramic sinks, wash basins, wash basin pedestals, baths, bidets, water closet pans, flushing cisterns, urinals and similar sanitary fixtures: of porcelain or china",0.608281177,2.320134095,0.207716844,0.326443524
+273,880240,"Aeroplanes and other aircraft: of an unladen weight exceeding 15,000kg",0.595241538,2.300497888,0.205557701,0.325198141
+274,903040,"Instruments and apparatus: specially designed for telecommunications (e.g. cross-talk meters, gain measuring instruments, distortion factor meters, psophometers)",0.607737248,2.384882828,0.203078651,0.323740255
+275,850980,"Electro-mechanical domestic appliances: with self-contained electric motor, other than vacuum cleaners of heading 85.08, n.e.c. in heading no. 8509",0.610212916,2.395055384,0.203047733,0.323721882
+276,940540,"Lamps and light fittings: electric, n.e.c. in heading no. 9405",0.826814803,3.251844994,0.202717276,0.323525217
+277,847141,"Automatic data processing machines: comprising in the same housing at least a central processing unit and an input and output unit, whether or not combined, n.e.c. in item no. 8471.30",0.334326564,1.316103727,0.202569334,0.323436998
+278,691110,Tableware and kitchenware: of porcelain or china,0.685157661,2.713942581,0.201570302,0.322838435
+279,851821,"Loudspeakers: single, mounted in their enclosures",0.49533448,1.970809668,0.200853823,0.322406115
+280,820239,"Tools, hand: circular saw blades (including slitting or slotting saw blades), with working part of materials (other than steel)",0.681564598,2.716258563,0.200588602,0.322245434
+281,847160,"Units of automatic data processing machines: input or output units, whether or not containing storage units in the same housing",0.764437652,3.059560084,0.199905362,0.321829884
+282,901811,"Medical, surgical instruments and appliances: electro-cardiographs",0.615825454,2.485143581,0.198591294,0.321024091
+283,841459,Fans: n.e.c. in item no. 8414.51,0.877002868,3.553244446,0.197957993,0.320632646
+284,841850,"Furniture incorporating refrigerating or freezing equipment: for storage and display, n.e.c. in item no. 8418.1, 8418.2, 8418.3 or 8418.4 (chests, cabinets, display counters, show-cases and the like)",0.636196469,2.579803709,0.197822274,0.320548494
+285,854140,"Electrical apparatus: photosensitive, including photovoltaic cells, whether or not assembled in modules or made up into panels, light-emitting diodes (LED)",0.619889855,2.519502189,0.197455382,0.320320539
+286,722990,"Steel, alloy: wire, of materials other than silico-manganese steel",0.514159636,2.095947315,0.196987957,0.320029134
+287,282540,Nickel oxides and hydroxides,0.335071543,1.374970206,0.195943487,0.31937397
+288,841869,Refrigerating or freezing equipment: n.e.c. in heading no. 8418,0.808699308,3.325954353,0.19559058,0.319151346
+289,750522,"Nickel: wire, of nickel alloys",0.213620193,0.882311687,0.19492105,0.318727236
+290,841490,"Pumps and compressors: parts, of air or vacuum pumps, air or other gas compressors and fans, ventilating or recycling hoods incorporating a fan",0.697683987,2.909210287,0.193430673,0.317774894
+291,731815,"Iron or steel: threaded screws and bolts n.e.c. in item no. 7318.1, whether or not with their nuts or washers",0.742330956,3.114196665,0.192486877,0.317165882
+292,845020,"Washing machines: household or laundry-type, of a dry linen capacity exceeding 10kg",0.655479047,2.759985946,0.191915024,0.316794627
+293,842839,"Elevators and conveyors: continuous-action, for goods or materials, n.e.c. in item no. 8428.20, 8428.31, 8428.32 or 8428.33",0.728894025,3.073350858,0.191700968,0.316655221
+294,852869,"Projectors: n.e.c. in subheading 8528.62, whether or not colour",0.750411066,3.18253369,0.190801324,0.316066702
+295,851981,"Sound recording or reproducing apparatus: using magnetic, optical or semiconductor media, n.e.c. in item no 8519.20, 8519.30 or 8519.50",0.645620017,2.764945427,0.189299994,0.315075122
+296,820231,"Tools, hand: circular saw blades (including slitting or slotting saw blades), with working part of steel",0.696068455,2.995080009,0.188577745,0.314593865
+297,847190,"Magnetic or optical readers, machines for transcribing data onto data media in coded form and machines for processing such data, not elsewhere specified or included",0.8051393,3.534533471,0.185529956,0.312532432
+298,851840,Amplifiers: audio-frequency electric,0.648344303,2.891192124,0.183172095,0.310903338
+299,851761,Base stations,0.52971496,2.364146159,0.183047817,0.310816633
+300,850819,"Vacuum cleaners, with self-contained electric motor, n.e.c. in item no. 8508.1",0.635298928,2.837986734,0.182910071,0.310720433
+301,847180,"Units of automatic data processing machines: n.e.c. in item no. 8471.50, 8471.60 or 8471.70",0.71911518,3.216425111,0.182723369,0.310589878
+302,845811,"Lathes: for removing metal, horizontal, numerically controlled",0.608813977,2.728259384,0.182439494,0.310391007
+303,720299,Ferro-alloys: n.e.c. in heading no. 7202,0.532917539,2.396918151,0.181893319,0.310007136
+304,321100,Driers: prepared,0.554670565,2.497548987,0.181726955,0.309889884
+305,847149,"Automatic data processing machines: presented in the form of systems, n.e.c. in item no. 8471.30 or 8471.41",0.706832986,3.206848397,0.180605654,0.30909562
+306,722850,"Steel, alloy: bars and rods, cold-formed or cold-finished",0.550375904,2.525164502,0.178952584,0.307911973
+307,847230,"Office machines: for sorting or folding mail or for inserting mail in envelopes or bands, machines for opening, closing or sealing mail and machines for affixing or cancelling postage stamps",0.5277838,2.434417981,0.178172805,0.307348335
+308,851030,Hair-removing appliances: with self-contained electric motor,0.28560925,1.324781399,0.177354017,0.306752829
+309,844399,"Printing machinery: parts and accessories, n.e.c. in item no. 8443.91",0.710768366,3.349541539,0.175052738,0.305058803
+310,910511,"Clocks: (excluding those with watch movements and instrument panel clocks), alarm clocks, electrically operated",0.512233102,2.422781074,0.174524916,0.30466601
+311,851762,"Communication apparatus (excluding telephone sets or base stations): machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",0.673781052,3.189165909,0.174421513,0.304588873
+312,841861,Heat pumps: other than air conditioning machines of heading no. 8415,0.418607503,2.004522233,0.172754887,0.303337115
+313,840310,Boilers: central heating boilers (excluding those of heading no. 8402),0.489345852,2.368873265,0.171206556,0.302159801
+314,851829,Loudspeakers: not mounted in their enclosures,0.443144624,2.154799938,0.170575089,0.301675635
+315,852873,"Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus: incorporating a monochrome video display or screen",0.095675424,0.468871667,0.169472884,0.300824934
+316,870324,"Vehicles: with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 3000cc",0.598302025,2.938536077,0.169162966,0.300584445
+317,283329,Sulphates: n.e.c. in item no. 2833.2,0.457581788,2.254413257,0.168725156,0.300243747
+318,910521,"Clocks: (excluding those with watch movements and instrument panel clocks), wall clocks, electrically operated",0.52249273,2.585234521,0.168126958,0.299776399
+319,820220,"Tools, hand: band saw blades",0.567233665,2.851155886,0.165935935,0.29804641
+320,844319,"Printing machinery: used for printing by means of plates, cylinders and other printing components of heading 84.42, n.e.c. in item no. 8443.1",0.689215707,3.492398747,0.164820481,0.29715458
+321,850811,"Vacuum cleaners, with self-contained electric motor, of a power not exceeding 1,500 W and having a dust bag or other receptacle capacity not exceeding 20L",0.52707988,2.703532618,0.163151687,0.295806231
+322,940520,"Lamps, electric: floor-standing or for table, desk or bedside",0.454848133,2.357077395,0.161756821,0.294666121
+323,844332,"Printing, copying, and facsimile machines: single-function printing, copying or facsimile machines, capable of connecting to an automatic data processing machine or to a network",0.659803398,3.440426521,0.160918634,0.29397524
+324,851850,Amplifier sets: electric sound,0.416177658,2.308121313,0.152765046,0.287023246
+325,810520,"Cobalt: mattes and other intermediate products of cobalt metallurgy, unwrought cobalt, powders",0.438113634,2.436509719,0.152407318,0.286708436
+326,820770,"Tools, interchangeable: (for machine or hand tools, whether or not power-operated), for milling",0.560004514,3.144764145,0.151157755,0.285602187
+327,283090,"Sulphides and polysulphides: whether or not chemically defined, other than sulphides of sodium",0.494117902,2.796917706,0.150140552,0.284694024
+328,910211,"Wrist-watches: electrically operated, with or without a stop-watch, (other than those of heading no. 9101) with mechanical display only",0.530675021,3.019775157,0.149466967,0.284088855
+329,851989,Sound recording or reproducing apparatus: n.e.c. in heading no 8519,0.540986507,3.098897752,0.148627393,0.283330305
+330,300640,"Pharmaceutical goods: dental cements and other dental fillings, bone reconstruction cements",0.654106432,3.755258248,0.148344825,0.283073941
+331,852799,Radio-broadcast receivers n.e.c. in heading no. 8527: not combined with sound recording or reproducing apparatus and not combined with a clock,0.39736337,2.289555847,0.147888097,0.28265843
+332,846150,"Machine-tools: sawing or cutting-off machines, working by removing metal, sintered metal carbides or cermets",0.507706269,2.940907046,0.147220411,0.282048458
+333,282759,Bromides and bromide oxides: other than item no. 2827.51,0.311048319,1.805762255,0.146941971,0.281793193
+334,846721,"Tools: for working in the hand, with self-contained electric motor: drills of all kinds",0.546759418,3.177827304,0.146797339,0.28166039
+335,842890,"Lifting, handling, loading or unloading machinery: n.e.c. in heading no. 8425, 8426, 8427 or 8428",0.565663618,3.340640419,0.144807883,0.27981913
+336,845891,"Lathes: for removing metal, numerically controlled, other than horizontal lathes",0.459541965,2.717733901,0.144633952,0.279656862
+337,940510,Chandeliers and other electric ceiling or wall light fittings: excluding those used for lighting public open spaces or thoroughfares,0.495311781,2.966882491,0.143062966,0.278181706
+338,841840,"Freezers: of the upright type, not exceeding 900l capacity",0.391916603,2.355112761,0.142669244,0.277809305
+339,852349,"Optical media: recorded, excluding products of Chapter 37",0.335976081,2.056522883,0.140428935,0.275669543
+340,720250,Ferro-alloys: ferro-silico-chromium,0.201982299,1.236466397,0.140416755,0.275657813
+341,722810,"Steel, alloy: bars and rods, of high speed steel",0.406832494,2.544527652,0.137845764,0.273157905
+342,260800,Zinc ores and concentrates,0.325669886,2.057630636,0.136646589,0.271975539
+343,851810,Microphones and stands therefor,0.51782099,3.275161815,0.136520785,0.271850891
+344,721050,"Iron or non-alloy steel: flat-rolled, width 600mm or more, plated or coated with chromium oxides or with chromium and chromium oxides",0.369257753,2.347233221,0.13593189,0.27126586
+345,846729,"Tools: for working in the hand, with self-contained electric motor: other than saws and drills",0.493477047,3.211856411,0.133180199,0.268498231
+346,853321,"Electrical resistors: fixed, for a power handling capacity not exceeding 20W (including rheostats and potentiometers but excluding heating resistors and carbon resistors)",0.398005136,2.607066885,0.132444458,0.267748645
+347,722620,"Steel, alloy: flat-rolled, width less than 600mm, of high speed steel",0.35989057,2.362101707,0.132215867,0.267514921
+348,841430,Compressors: of a kind used in refrigerating equipment,0.483918955,3.19836775,0.131418055,0.266696091
+349,841480,"Pumps and compressors: for air, vacuum or gas, n.e.c. in heading no. 8414",0.565680282,3.751040734,0.131043975,0.266310492
+350,900720,"Projectors, cinematographic: whether or not incorporating sound recording or reproducing apparatus",0.280361423,1.880180221,0.129764415,0.264983434
+351,282619,Fluorides: other than of aluminium,0.359940247,2.42130281,0.129417041,0.264620993
+352,846722,"Tools: for working in the hand, with self-contained electric motor: saws",0.414135836,2.82344624,0.127915162,0.263043208
+353,852791,Radio-broadcast receivers n.e.c. in heading no. 8527: combined with sound recording or reproducing apparatus,0.307682386,2.310024612,0.117538894,0.251649125
+354,846031,"Machine-tools: sharpening (tool or cutter grinding) machines, numerically controlled",0.282793033,2.157667522,0.115876912,0.249741021
+355,851930,Sound recording or reproducing apparatus: turntables (record-decks),0.366412107,2.822689778,0.114895077,0.248602608
+356,840999,Engines: parts for internal combustion piston engines (excluding spark-ignition),0.317080952,2.479759441,0.113371129,0.246818983
+357,902190,"Appliances: worn, carried or implanted in the body, to compensate for a defect or disability",0.363392736,2.888738672,0.111739868,0.244887052
+358,850440,Electrical static converters,0.449242842,3.59258208,0.111148516,0.24418084
+359,854231,"Electronic integrated circuits: processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",0.346959599,2.777581019,0.111043395,0.244054973
+360,901819,"Medical, surgical instruments and appliances: electro-diagnostic apparatus (including apparatus for functional exploratory examination or for checking physiological parameters), n.e.c. in item no. 9018.1",0.385695035,3.227115375,0.106757618,0.238837531
+361,854239,Electronic integrated circuits: n.e.c. in heading no. 8542,0.279362541,2.342545739,0.106549319,0.238579621
+362,291529,Acids: saturated acyclic monocarboxylic acids: acetic acid and its salts n.e.c. in item no. 2915.2,0.279080092,2.413093747,0.103663474,0.234964195
+363,381600,"Refractory cements, mortars, concretes and similar compositions: other than products of heading no. 3801",0.397124777,3.480927651,0.102403148,0.233360167
+364,260200,"Manganese ores and concentrates, including ferruginous manganese ores and concentrates with a manganese content of 20% or more, calculated on the dry weight",0.167605367,1.475301378,0.102017578,0.232866359
+365,841590,"Air conditioning machines: with motor driven fan and elements for temperature control, parts thereof",0.342820241,3.065021856,0.100597455,0.231034964
+366,820900,"Tools: plates, sticks, tips and the like for tools, unmounted, of sintered metal carbides or cermets",0.270865935,2.552009331,0.095953916,0.224905159
+367,690911,"Ceramic wares: for laboratory, chemical or other technical uses, of porcelain or china",0.19266667,1.835256018,0.095006911,0.223627803
+368,870390,Vehicles: for transport of persons (other than those of heading no. 8702) n.e.c. in heading no. 8703,0.253692875,2.523679107,0.091342779,0.218595697
+369,381511,"Catalysts, supported: reaction initiators, reaction accelerators and catalytic preparations, with nickel or nickel compounds as the active substance, n.e.c. or included",0.208805181,2.097682185,0.090529514,0.217459078
+370,853400,Circuits: printed,0.286016494,2.896731498,0.089864637,0.21652442
+371,722692,"Steel, alloy: flat-rolled, width less than 600mm, (excluding silicon-electrical or high speed steel), cold-rolled",0.212637573,2.192551723,0.088407833,0.214459253
+372,852712,Radio broadcast receivers capable of operating without an external power source: pocket-size radio cassette-players,0.100593772,1.091488141,0.08438495,0.208630498
+373,722540,"Steel, alloy: flat-rolled, width 600mm or more, hot-rolled, not in coils",0.306708032,3.455541,0.081522523,0.204366851
+374,722550,"Steel, alloy: flat-rolled, width 600mm or more, cold-rolled",0.249356185,2.867526775,0.08000178,0.202061008
+375,851531,"Welding machines and apparatus: for arc (including plasma arc) welding of metals, fully or partly automatic, whether or not capable of cutting",0.269829797,3.160926819,0.07865023,0.199987458
+376,870331,"Vehicles: with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",0.235732502,2.89784941,0.075227809,0.194631969
+377,851521,"Welding machines and apparatus: for resistance welding of metal, fully or partly automatic, whether or not capable of cutting",0.219553804,2.816193192,0.072322827,0.189964256
+378,284990,"Carbides: whether or not chemically defined, other than of calcium or silicon",0.128101524,2.004983026,0.060054593,0.168903617
+379,841440,Compressors: air compressors mounted on a wheeled chassis for towing,0.21623863,3.417736008,0.059504716,0.167904441
+380,722591,"Steel, alloy: flat-rolled, width 600mm or more, n.e.c. in heading no. 7225, electrolytically plated or coated with zinc",0.148683004,2.528924623,0.055528302,0.160524682
+381,870332,"Vehicles: with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",0.160521347,3.460598363,0.044329202,0.138134742
+382,901812,"Medical, surgical instruments and appliances: ultrasonic scanning apparatus",0.148539004,3.230006449,0.043965371,0.137363338
+383,844621,"Weaving machines (looms): for weaving fabrics of a width exceeding 30cm, shuttle type, power looms",0.129521536,2.910737243,0.042602142,0.134446001
+384,722691,"Steel, alloy: flat-rolled, width less than 600mm, (excluding silicon-electrical or high speed steel), hot-rolled",0.051405701,1.281385294,0.038569964,0.125556089
+385,720260,Ferro-alloys: ferro-nickel,0.075971839,2.318930532,0.031722311,0.109465291
+386,282520,Lithium oxide and hydroxide,0.044649724,2.189035619,0.019989263,0.078209191
+387,282200,Cobalt oxides and hydroxides: commercial cobalt oxides,0.038814954,1.947617468,0.019540032,0.076895693
+388,842860,"Teleferics, chair-lifts, ski-draglines, traction mechanisms for funiculars",0.054896379,2.949616696,0.018271307,0.073129505
+389,722410,"Steel, alloy: ingots and other primary forms",0.013914949,1.45550688,0.009469676,0.044125476
+390,262060,"Slag, ash and residues: (not from the manufacture of iron or steel), containing arsenic, mercury, thallium or their mixtures, of a kind used for the extraction of arsenic or those metals or for the manufacture of their chemical compounds",0,0.693147181,0,
