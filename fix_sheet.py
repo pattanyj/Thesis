@@ -5,23 +5,39 @@ Created on Wed Mar  2 15:23:14 2022
 @author: patta
 """
 
-# imports
+#imports
 # import json
 import pandas as pd
 import numpy as np
 # from pyvis.network import Network
 # import networkx as nx
 
-# import BACI data
-# BACI_df = pd.read_csv('./Data/BACI_HS17_Y2017_V202102.csv')
-BACI_df = pd.read_csv('./Data/BACI_HS12_Y2018_V202201_clean.csv')
-country_code_df = pd.read_csv('./Data/country_code.csv',encoding='unicode_escape')
+# import BACI Data
+
+#import clean BACI files
+BACI_2010 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2010_V202201.csv')
+BACI_2011 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2011_V202201.csv')
+BACI_2012 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2012_V202201.csv')
+BACI_2013 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2013_V202201.csv')
+BACI_2014 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2014_V202201.csv')
+BACI_2015 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2015_V202201.csv')
+BACI_2016 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2016_V202201.csv')
+BACI_2017 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2017_V202201.csv')
+BACI_2018 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2018_V202201.csv')
+BACI_2019 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2019_V202201.csv')
+BACI_2020 = pd.read_csv('./clean_BACI/clean_BACI_HS07_Y2020_V202201.csv')
+
+                  
+#
+# choose a year of BACI data
+BACI_df = BACI_2020
+country_code_df = pd.read_csv('./BACI_HS07/country_codes_V202201.csv',encoding='unicode_escape')
 
 # import cobalt information
 HS6_composition_df = pd.read_csv('./Data/compostions_balanced_Co.csv')
-prod_code_df = pd.read_csv('./Data/product_codes_HS17.csv')
+prod_code_df = pd.read_csv('./BACI_HS07/product_codes_HS07_V202201.csv')
 
-#%% Getting names of all cobalt products
+# Getting names of all cobalt products
 
 #collect country names
 names = country_code_df.drop(columns=['country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
@@ -61,7 +77,7 @@ prod_list_cobalt_DF = prod_list_cobalt_DF.drop(columns=['t','i','j','v'])
 prod_list_cobalt_DF['co_quantity'] = prod_list_cobalt_DF['Balance_mean']*prod_list_cobalt_DF['q']
 prod_list_cobalt_DF.to_csv('co_product_list.csv')
 
-#%% Resilience calculations
+# Resilience calculations
 #collect product codes and create DF for final results
 products = HS6_composition_df['HS6'].to_numpy()
 resilience_df = pd.DataFrame(columns = ['product',"efficiency","redundancy",'alpha','theoretical_resilience']) 
@@ -94,8 +110,8 @@ for product in products:
     a_series = pd.Series(to_append, index = resilience_df.columns)
     resilience_df = resilience_df.append(a_series, ignore_index=True)
 
-#%% 
+
 #calculate df with names
-resilience_2018 = resilience_df.merge(prod_list_cobalt_DF,left_on='product', right_on='HS6').drop(columns=['HS6','Balance_mean','q','co_quantity'])
-resilience_2018 = resilience_2018[['product', 'prod_name','efficiency','redundancy','alpha','theoretical_resilience']]
-resilience_2018.to_csv('./Results/resilience_2018.csv')
+resilience_2020 = resilience_df.merge(prod_list_cobalt_DF,left_on='product', right_on='HS6').drop(columns=['HS6','Balance_mean','q','co_quantity'])
+resilience_2020 = resilience_2020[['product', 'prod_name','efficiency','redundancy','alpha','theoretical_resilience']]
+resilience_2020.to_csv('./Resilience/resilience_2020.csv')
