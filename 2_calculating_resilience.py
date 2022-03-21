@@ -9,29 +9,44 @@ Created on Wed Mar  2 15:23:14 2022
 import pandas as pd
 import numpy as np
 
+#choose data to import
 
-#import clean BACI files
-BACI_2010 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2010_V202201.csv')
-BACI_2011 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2011_V202201.csv')
-BACI_2012 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2012_V202201.csv')
-BACI_2013 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2013_V202201.csv')
-BACI_2014 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2014_V202201.csv')
-BACI_2015 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2015_V202201.csv')
-BACI_2016 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2016_V202201.csv')
-BACI_2017 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2017_V202201.csv')
-BACI_2018 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2018_V202201.csv')
-BACI_2019 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2019_V202201.csv')
-BACI_2020 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2020_V202201.csv')
+# #import clean HS07 BACI files
+# BACI_2010 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2010_V202201.csv')
+# BACI_2011 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2011_V202201.csv')
+# BACI_2012 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2012_V202201.csv')
+# BACI_2013 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2013_V202201.csv')
+# BACI_2014 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2014_V202201.csv')
+# BACI_2015 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2015_V202201.csv')
+# BACI_2016 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2016_V202201.csv')
+# BACI_2017 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2017_V202201.csv')
+# BACI_2018 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2018_V202201.csv')
+# BACI_2019 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2019_V202201.csv')
+# BACI_2020 = pd.read_csv('./clean_BACI/HS07/clean_BACI_HS07_Y2020_V202201.csv')
+# #import HS07 cobalt information
+# country_code_df = pd.read_csv('./BACI_HS07/country_codes_V202201.csv',encoding='unicode_escape')
+# prod_code_df = pd.read_csv('./BACI_HS07/product_codes_HS07_V202201.csv')
 
-# USER INPUT!choose a year of BACI data
+#import clean HS12 BACI files
+# BACI_2012 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2012_V202201.csv')
+# BACI_2013 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2013_V202201.csv')
+# BACI_2014 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2014_V202201.csv')
+# BACI_2015 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2015_V202201.csv')
+# BACI_2016 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2016_V202201.csv')
+# BACI_2017 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2017_V202201.csv')
+# BACI_2018 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2018_V202201.csv')
+# BACI_2019 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2019_V202201.csv')
+BACI_2020 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2020_V202201.csv')
+# import HS12 cobalt information
+country_code_df = pd.read_csv('./BACI_HS12/country_codes_V202201.csv',encoding='unicode_escape')
+prod_code_df = pd.read_csv('./BACI_HS12/product_codes_HS12_V202201.csv')
+
+#USER INPUT! choose a year of BACI data
 BACI_df = BACI_2020
-
-# import cobalt information
-country_code_df = pd.read_csv('./BACI_HS07/country_codes_V202201.csv',encoding='unicode_escape')
+#import
 HS6_composition_df = pd.read_csv('./Data/compostions_balanced_Co.csv')
-prod_code_df = pd.read_csv('./BACI_HS07/product_codes_HS07_V202201.csv')
 
-#%% Getting names of all cobalt products
+# Getting names of all cobalt products
 
 #collect country names
 names = country_code_df.drop(columns=['country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
@@ -71,7 +86,7 @@ prod_list_cobalt_DF = prod_list_cobalt_DF.drop(columns=['t','i','j','v'])
 prod_list_cobalt_DF['co_quantity'] = prod_list_cobalt_DF['Balance_mean']*prod_list_cobalt_DF['q']
 prod_list_cobalt_DF.to_csv('co_product_list.csv')
 
-#%% Resilience calculations
+# Resilience calculations
 
 #collect product codes and create DF for final results
 products = HS6_composition_df['HS6'].to_numpy()
@@ -107,6 +122,7 @@ for product in products:
 
 
 #calculate df with names
-resilience_2020 = resilience_df.merge(prod_list_cobalt_DF,left_on='product', right_on='HS6').drop(columns=['HS6','Balance_mean','q','co_quantity'])
-resilience_2020 = resilience_2020[['product', 'prod_name','efficiency','redundancy','alpha','theoretical_resilience']]
-resilience_2020.to_csv('./Resilience/HS07/resilience_2020.csv')
+resilience = resilience_df.merge(prod_list_cobalt_DF,left_on='product', right_on='HS6').drop(columns=['HS6','Balance_mean','q','co_quantity'])
+resilience = resilience[['product', 'prod_name','efficiency','redundancy','alpha','theoretical_resilience']]
+# USER INPUT! Change name/location to save file
+resilience.to_csv('./Resilience/HS12/resilience_2020.csv')
