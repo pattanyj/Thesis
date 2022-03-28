@@ -11,7 +11,7 @@ import streamlit.components.v1 as components
 import pandas as pd
 import networkx as nx
 from pyvis.network import Network
-
+# 2019-2020_LithiumIon.html
 
 # Read dataset
 # libattery_nodes_2018 = pd.read_csv('./network_product_data/libattery_nodes_2018.csv')
@@ -60,8 +60,8 @@ else:
     # Save and read graph as HTML file (on Streamlit Sharing)
     try:
         path = '/tmp'
-        drug_net.save_graph('Plots/2019-2020_LithiumIon.html')
-        HtmlFile = open('Plots/2019-2020_LithiumIon.html', 'r', encoding='utf-8')
+        drug_net.save_graph('Plots/20192020_LithiumIon.html')
+        HtmlFile = open('Plots/20192020_LithiumIon.html', 'r', encoding='utf-8')
 
     # Save and read graph as HTML file (locally)
     except:
