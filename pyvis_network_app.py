@@ -28,20 +28,20 @@ country_list = list(HS12_country['country_name_full'])
 country_list.sort()
 
 # Implement multiselect dropdown menu for option selection
-selected_drugs = st.multiselect('Select country or countries to visualize', country_list)
+selected_country = st.multiselect('Select country or countries to visualize', country_list)
 
 # Set info message on initial site load
-if len(selected_drugs) == 0:
+if len(selected_country) == 0:
     st.text('Choose at least 1 drug to get started')
 
 # Create network graph when user selects >= 1 item
 else:
-    df_select = df_interact.loc[df_interact['drug_1_name'].isin(selected_drugs) | \
-                                df_interact['drug_2_name'].isin(selected_drugs)]
+    df_select = df_interact.loc[df_interact['sources'].isin(selected_country) | \
+                                df_interact['targets'].isin(selected_country)]
     df_select = df_select.reset_index(drop=True)
 
     # Create networkx graph object from pandas dataframe
-    G = nx.from_pandas_edgelist(df_select, 'drug_1_name', 'drug_2_name', 'weight')
+    G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
 
     # Initiate PyVis network object
     drug_net = Network(height='465px', bgcolor='#222222', font_color='white')
