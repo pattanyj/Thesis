@@ -70,12 +70,19 @@ libattery_nodes_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
 libattery_nodes_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
 #%%
 
-new_df = pd.merge(libattery_nodes_2019, libattery_nodes_2020,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'], )
+new_df = pd.merge(libattery_nodes_2020, libattery_nodes_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'], )
 libattery_nodes = new_df #.fillna(0)
 libattery_nodes['q'] = libattery_nodes['q_x'] - libattery_nodes['q_y']
 libattery_nodes = libattery_nodes.fillna(0)
-libattery_nodes.to_csv('./network_product_data/libattery_nodes_2019_subtract_2020.csv')
-# libattery_nodes = libattery_nodes.drop(columns = )
+libattery_nodes = libattery_nodes.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
+libattery_nodes.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
+
+# group by exports
+libattery_nodes_exports = libattery_nodes.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
+libattery_nodes_exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
+libattery_nodes_imports = libattery_nodes.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
+libattery_nodes_imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
+
 #%%
 libattery_nodes_2018.to_csv('./network_product_data/libattery_nodes_2018.csv')
 libattery_nodes_2019.to_csv('./network_product_data/libattery_nodes_2019.csv')

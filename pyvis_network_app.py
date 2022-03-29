@@ -17,7 +17,7 @@ from pyvis.network import Network
 # libattery_nodes_2018 = pd.read_csv('./network_product_data/libattery_nodes_2018.csv')
 # libattery_nodes_2019 = pd.read_csv('./network_product_data/libattery_nodes_2019.csv')
 # libattery_nodes_2020 = pd.read_csv('./network_product_data/libattery_nodes_2020.csv')
-df_interact = pd.read_csv('./network_product_data/libattery_nodes_2019_subtract_2020.csv')
+df_interact = pd.read_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
 
 # Set header title
 st.title('Network Graph Visualization of Lithium Ion Trade Interactions')
