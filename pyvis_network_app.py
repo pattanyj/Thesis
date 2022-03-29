@@ -51,7 +51,7 @@ else:
     G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
 
     # Initiate PyVis network object
-    drug_net = Network(height="800px", width="100%", bgcolor='white', font_color='black')   #, directed=True
+    drug_net = Network(height="800px", width="100%", directed=True, bgcolor='white', font_color='black')   #
 
     # Take Networkx graph and translate it to a PyVis graph format
     drug_net.from_nx(G)
@@ -69,9 +69,9 @@ else:
     #     drug_net.add_edge(src, dst, value=w)
 
     # # Generate network with specific layout settings
-    # drug_net.repulsion(node_distance=420, central_gravity=0.33,
-    #                     spring_length=110, spring_strength=0.10,
-    #                     damping=0.95)
+    drug_net.repulsion(node_distance=420, central_gravity=0.33,
+                        spring_length=110, spring_strength=0.10,
+                        damping=0.95)
 
     # Save and read graph as HTML file (on Streamlit Sharing)
     try:
