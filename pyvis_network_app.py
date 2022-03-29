@@ -44,7 +44,7 @@ else:
     G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
 
     # Initiate PyVis network object
-    drug_net = Network(height = 3500, width = 3500, bgcolor='white', font_color='black')
+    drug_net = Network(height = 5000, width = 4000, bgcolor='white', font_color='black')
 
     # Take Networkx graph and translate it to a PyVis graph format
     drug_net.from_nx(G)
@@ -67,4 +67,4 @@ else:
         HtmlFile = open('pyvis_graph.html', 'r', encoding='utf-8')
 
     # Load HTML file in HTML component for display on Streamlit page
-    components.html(HtmlFile.read(), height = 1200,width=1000, scrolling = True)
+    components.html(HtmlFile.read(), scrolling = True)
