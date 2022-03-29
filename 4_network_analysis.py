@@ -294,20 +294,20 @@ net_2019 = Network(height='800px', width='100%', bgcolor='white', font_color='mi
 # set the physics layout of the network
 net_2019.barnes_hut()
 
-    sources = libattery_nodes_2019['sources']   #exporters
-    targets = libattery_nodes_2019['targets']   #importers
-    weights = libattery_nodes_2019['q']         #tons of exports
+sources = libattery_nodes_2019['sources']   #exporters
+targets = libattery_nodes_2019['targets']   #importers
+weights = libattery_nodes_2019['q']         #tons of exports
     
-    edge_data = zip(sources, targets, weights)
+edge_data = zip(sources, targets, weights)
     
-    for e in edge_data:
-        src = e[0]
-        dst = e[1]
-        w = e[2]
-    
-        net_2019.add_node(src, src, title=src)
-        net_2019.add_node(dst, dst, title=dst)
-        net_2019.add_edge(src, dst, value=w)
+for e in edge_data:
+    src = e[0]
+    dst = e[1]
+    w = e[2]
+
+    net_2019.add_node(src, src, title=src)
+    net_2019.add_node(dst, dst, title=dst)
+    net_2019.add_edge(src, dst, value=w)
 
 
 neighbor_map = net_2019.get_adj_list()

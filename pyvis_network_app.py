@@ -19,6 +19,12 @@ from pyvis.network import Network
 # libattery_nodes_2020 = pd.read_csv('./network_product_data/libattery_nodes_2020.csv')
 df_interact = pd.read_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
 
+# get information for edge data
+sources = df_interact['sources']   #exporters
+targets = df_interact['targets']   #importers
+weights = df_interact['q']         #tons of exports
+
+
 # Set header title
 st.title('Network Graph Visualization of Lithium Ion Trade Interactions')
 
@@ -29,6 +35,7 @@ country_list.sort()
 
 # Implement multiselect dropdown menu for option selection
 selected_country = st.multiselect('Select country or countries to visualize', country_list)
+
 
 # Set info message on initial site load
 if len(selected_country) == 0:
@@ -44,10 +51,22 @@ else:
     G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
 
     # Initiate PyVis network object
-    drug_net = Network(height="800px", width="100%", bgcolor='white', font_color='black')
+    drug_net = Network(height="800px", directed=True, width="100%", bgcolor='white', font_color='black')
 
     # Take Networkx graph and translate it to a PyVis graph format
     drug_net.from_nx(G)
+    
+    # add edges    
+    edge_data = zip(sources, targets, weights)
+        
+    for e in edge_data:
+        src = e[0]
+        dst = e[1]
+        w = e[2]
+
+        drug_net.add_node(src, src, title=src)
+        drug_net.add_node(dst, dst, title=dst)
+        drug_net.add_edge(src, dst, value=w)
 
     # Generate network with specific layout settings
     drug_net.repulsion(node_distance=420, central_gravity=0.33,
