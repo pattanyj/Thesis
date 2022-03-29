@@ -32,7 +32,7 @@ selected_country = st.multiselect('Select country or countries to visualize', co
 
 # Set info message on initial site load
 if len(selected_country) == 0:
-    st.text('Choose at least 1 drug to get started')
+    st.text('Choose at least 1 country to get started')
 
 # Create network graph when user selects >= 1 item
 else:
@@ -67,4 +67,4 @@ else:
         HtmlFile = open('pyvis_graph.html', 'r', encoding='utf-8')
 
     # Load HTML file in HTML component for display on Streamlit page
-    components.html(HtmlFile.read(), height=435)
+    components.html(HtmlFile.read(), height = 1500,width=1500)
