@@ -44,7 +44,7 @@ else:
     G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
 
     # Initiate PyVis network object
-    drug_net = Network(height = 1000, width = 1500, bgcolor='white', font_color='black')
+    drug_net = Network(height = 3500, width = 3500, bgcolor='white', font_color='black')
 
     # Take Networkx graph and translate it to a PyVis graph format
     drug_net.from_nx(G)
