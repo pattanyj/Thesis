@@ -20,9 +20,9 @@ from pyvis.network import Network
 df_interact = pd.read_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
 
 # get information for edge data
-sources = df_interact['sources']   #exporters
-targets = df_interact['targets']   #importers
-weights = df_interact['q']         #tons of exports
+# sources = df_interact['sources']   #exporters
+# targets = df_interact['targets']   #importers
+# weights = df_interact['q']         #tons of exports
 
 
 # Set header title
@@ -57,21 +57,21 @@ else:
     drug_net.from_nx(G)
     
     # add edges    
-    edge_data = zip(sources, targets, weights)
+    # edge_data = zip(sources, targets, weights)
         
-    for e in edge_data:
-        src = e[0]
-        dst = e[1]
-        w = e[2]
+    # for e in edge_data:
+    #     src = e[0]
+    #     dst = e[1]
+    #     w = e[2]
 
-        drug_net.add_node(src, src, title=src)
-        drug_net.add_node(dst, dst, title=dst)
-        drug_net.add_edge(src, dst, value=w)
+    #     drug_net.add_node(src, src, title=src)
+    #     drug_net.add_node(dst, dst, title=dst)
+    #     drug_net.add_edge(src, dst, value=w)
 
-    # Generate network with specific layout settings
-    drug_net.repulsion(node_distance=420, central_gravity=0.33,
-                        spring_length=110, spring_strength=0.10,
-                        damping=0.95)
+    # # Generate network with specific layout settings
+    # drug_net.repulsion(node_distance=420, central_gravity=0.33,
+    #                     spring_length=110, spring_strength=0.10,
+    #                     damping=0.95)
 
     # Save and read graph as HTML file (on Streamlit Sharing)
     try:
