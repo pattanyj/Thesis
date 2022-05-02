@@ -11,7 +11,7 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 st.title('Hello Pyvis')
 
