@@ -36,15 +36,15 @@ else:
         'df_select = set selection criteria'
         df_select = df_interact
 
-        # Create networkx graph object from pandas dataframe
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total')
-
         # Initiate PyVis network object
         net_2018_2020 = Network(height="800px", width="100%", directed=True, bgcolor='white', font_color='black')   #
 
-        # Take Networkx graph and translate it to a PyVis graph format
-        net_2018_2020.from_nx(G)
-        
+
+        # # Generate network with specific layout settings
+        net_2018_2020.repulsion(node_distance=420, central_gravity=0.33,
+                            spring_length=110, spring_strength=0.10,
+                            damping=0.95)
+       
         sources = df_select['sources']   #exporters
         targets = df_select['targets']   #importers
         exports = df_select['q_total']   #exports from source to target
@@ -71,13 +71,7 @@ else:
             if wgi > 1 and wgi <= 2.5:
                 net_2018_2020.add_node(src, src,title= (src+'<br />'+'World Governance Index Average : '+str(wgi)+'<br />'+'Imports and exports (tons): '+str(w)), size = np.log(w), color = 'darkgreen')
                 net_2018_2020.add_node(dst, dst, title=dst)
-                net_2018_2020.add_edge(src, dst, value=exp)   
-
-        # # Generate network with specific layout settings
-        net_2018_2020.repulsion(node_distance=420, central_gravity=0.33,
-                            spring_length=110, spring_strength=0.10,
-                            damping=0.95)
-
+                net_2018_2020.add_edge(src, dst, value=exp)
         # Save and read graph as HTML file (on Streamlit Sharing)
         try:
             path = '/tmp'
