@@ -17,8 +17,8 @@ st.title('Hello Pyvis')
 st.sidebar.title('Select cobalt product:')
 product=st.sidebar.selectbox('Select one',('Cells and Batteries: primary lithium','X', 'Y'))
 year_range=st.multiselect.selectbox('Select a yearly range',('2018 to 2020','X','Y'))
-trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
-tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=100000, step=100)
+# trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
+# tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=100000, step=100)
 
 
 
