@@ -81,14 +81,14 @@ else:
         # Save and read graph as HTML file (on Streamlit Sharing)
         try:
             path = '/tmp'
-            net_2018_2020.save_graph('pyvis_graph.html')
-            HtmlFile = open('pyvis_graph.html', 'r', encoding='utf-8')
+            net_2018_2020.save_graph('LI_1820.html')
+            HtmlFile = open('LI_1820.html', 'r', encoding='utf-8')
 
         # Save and read graph as HTML file (locally)
         except:
             path = '/html'
-            net_2018_2020.save_graph('pyvis_graph.html')
-            HtmlFile = open('pyvis_graph.html', 'r', encoding='utf-8')
+            net_2018_2020.save_graph('LI_1820.html')
+            HtmlFile = open('LI_1820.html', 'r', encoding='utf-8')
 
 
         # Load HTML file in HTML component for display on Streamlit page
