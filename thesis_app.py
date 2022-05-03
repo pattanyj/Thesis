@@ -11,7 +11,7 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 st.title('Hello Pyvis')
 
@@ -38,7 +38,7 @@ else:
         df_select = df_interact
         
         # Create networkx graph object from pandas dataframe
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total',node_color=df_select['wgi'], cmap=plt.cm.RdYlGn)
+        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total',node_color=df_select['wgi'])
 
         # Initiate PyVis network object
         net_2018_2020 = Network(height="800px", width="100%", directed=True, bgcolor='white', font_color='black')   #
