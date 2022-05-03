@@ -98,18 +98,6 @@ else:
         df_interact = pd.read_csv('./data_pyvis/li_2018_to_2020.csv')
         HtmlFile = open("./html/HS6_850650.html", 'r', encoding='utf-8')
         
-        # source_code = HtmlFile.read() 
-        
-        # if trade_partners==int:
-        #     for country in df_interact['sources','targets']:
-        #         source_count = df_interact['sources'].isin(list(country).count()
-        #         target_count = df_interact['targets'].isin(list(country).count()                                      
-        #         source_count+target_count >= trade_partners
-        # if tons_prod=int:
-        #     for ton in df_interact['sources','targets']
-              
-      # source_code = HtmlFile.read() 
-      # components.html(source_code, height = 1200,width=1000)
   
 
 
