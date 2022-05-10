@@ -53,7 +53,7 @@ else:
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
-        scale=50 # Scaling the size of the nodes by 50*degree
+        scale=1 # Scaling the size of the nodes by 1*degree
         d = dict(G.degree)
         #Updating dict
         d.update((x, scale*y) for x, y in d.items())
