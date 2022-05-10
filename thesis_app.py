@@ -11,7 +11,7 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # import matplotlib as mpl
 # from matplotlib import colors
@@ -49,7 +49,7 @@ else:
         
         # Create networkx graph object from pandas dataframe
         #calculate degree centrality
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total',node_color= wgi_color,cmap = "RdYlGn")
+        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total')
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
