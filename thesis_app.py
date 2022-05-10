@@ -54,7 +54,7 @@ else:
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
         scale=1 # Scaling the size of the nodes by 1*degree
-        d = dict(G.degree)
+        d = dict(nx.betweenness_centrality(G, normalized = True, endpoints = False))
         #Updating dict
         d.update((x, scale*y) for x, y in d.items())
         #Setting up size attribute
