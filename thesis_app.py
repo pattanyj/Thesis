@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 
 
 
-st.title('Hello Pyvis')
+st.title('Cobalt Trade Network')
 
 #Network._repr_html_ = net_repr_html
 st.sidebar.title('Select cobalt product:')
@@ -28,7 +28,6 @@ product=st.sidebar.selectbox('Select one',('Cells and Batteries: primary lithium
 year_range=st.sidebar.selectbox('Select a yearly range',('2018 to 2020','X','Y'))
 # trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
 # tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=100000, step=100)
-
 
 
 if len(product) ==0:
@@ -41,12 +40,16 @@ else:
     if product=='Cells and Batteries: primary lithium' and year_range=='2018 to 2020':
         df_interact = pd.read_csv('./data_pyvis/li_2018_to_2020.csv') 
         
-        'df_select = set selection criteria'
-        df_select = df_interact   #.dropna(axis=0)
+        # 'df_select = set selection criteria'
+        df_select = df_interact.dropna(axis=0)
+        
+        #import wgi
+        wgi_color = pd.read_csv('./data_pyvis/wgi_color.csv') 
+        wgi_color = wgi_color.drop(columns=['IndexAvg','country_code'])
         
         # Create networkx graph object from pandas dataframe
         #calculate degree centrality
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total', cmap = "RdYlGn")
+        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total',node_color= wgi_color,cmap = "RdYlGn")
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
