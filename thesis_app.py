@@ -10,12 +10,10 @@ import streamlit.components.v1 as components
 import pandas as pd
 import networkx as nx
 from pyvis.network import Network
-import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib
+import matplotlib as mpl
 
-# import matplotlib as mpl
-# from matplotlib import colors
-# from math import e
 
 
 
@@ -59,6 +57,7 @@ else:
         d.update((x, scale*y) for x, y in d.items())
         #Setting up size attribute
         nx.set_node_attributes(G,d,'size')
+        
         
         # Initiate PyVis network object
         net_2018_2020 = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')   #
