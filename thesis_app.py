@@ -58,7 +58,7 @@ else:
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
-        scale=100 # Scaling the size of the nodes by 1*degree
+        scale=500 # Scaling the size of the nodes by 1*degree
         d = dict(nx.betweenness_centrality(G, normalized = True, endpoints = False))
         #Updating dict
         d.update((x, scale*y) for x, y in d.items())
@@ -85,7 +85,7 @@ else:
         
         
         for index, row in df_select.iterrows():
-            nt.add_edge(row['country_code_x'], row['country_code_y'], width=10*(row['q'])/(df_select['q'].sum()))
+            nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q'])/(df_select['q'].sum()))
         
         # Generate network with specific layout settings
         nt.repulsion(node_distance=500, central_gravity=0.01,

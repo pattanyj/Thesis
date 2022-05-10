@@ -111,7 +111,7 @@ HS12_2020_final = HS12_2020_final.drop(columns=['country_code','country_name_abb
 #%%collecting df for lithium ion batteries
 code = [850650]
 
-#2018 to 2020
+#2018 to 2020ArithmeticError
 df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
 df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
 df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
@@ -129,10 +129,26 @@ exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q
 imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
 imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
 
-#%%
-c = [840610]
-HS6_840610_2018 = HS12_2018_final[HS12_2018_final['k'].isin(c)]
-HS6_840610_2018.to_csv('./network_product_data/TEST_NETWORK_2018.csv')
+#%%collecting df for all data
+code = [850650]
+
+#2018 to 2020ArithmeticError
+df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
+df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
+df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
+
+new_df = pd.merge(df_2020, df_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
+network_18_20 = new_df #.fillna(0)
+network_18_20['q'] = network_18_20['q_x'] - network_18_20['q_y']
+network_18_20 = network_18_20.fillna(0)
+network_18_20 = network_18_20.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
+network_18_20.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
+
+# group by exports
+exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
+# exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
+imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
+imports.to_csv('./network_product_data/master_data.csv')
 
 
 #%% Biggest importers/exporters NAMES
