@@ -130,9 +130,45 @@ imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q
 imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
 
 #%%collecting df for all data
-code = [850650]
+code = [260500, #Cobalt ores and concentrates (1988-2500)
+750300, #Waste and scrap, of nickel alloys (excl. ingots or other similar unwrought shapes, of remelted nickel alloys waste and scrap, ashes and residues containing nickel alloys)
+# 810530, #Cobalt waste and scrap (excl. ash and residues containingcobalt)(2002-2500)
+810520, #Cobalt mattes and other intermediate products of cobalt metallurgy; unwrought cobalt; cobalt powders(2002-2500)
+750110, #Nickel mattes
+282200, #Cobalt oxides and hydroxides; commercial cobalt oxides(1988-2500)
+282739, #Cobalt chlorides(2007-2500)
+283329, #Sulphates of cobalt and of titanium(1988-2500)
+# 840610, #Turbines: steam and other vapour turbines, for marine propulsion
+840681, #Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output exceeding 40MW
+840682, #Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output not exceeding 40MW
+840690, #Turbines: parts of steam and other vapour turbines
+# 841191, #Turbines: parts of turbo-jets and turbo-propellers
+841199, #Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers)
+842112, #Centrifuges: clothes-dryers
+841810, #Refrigerators and freezers: combined refrigerator-freezers, fitted with separate external doors, electric or other"
+# 841821, #Refrigerators: for household use, compression-type, electric or other"
+# 841829, #Refrigerators: household, electric or not, other than compression-type"
+841830, #Freezers: of the chest type, not exceeding 800l capacity"
+841840, #Freezers: of the upright type, not exceeding 900l capacity"
+841850, #Furniture incorporating refrigerating or freezing equipment: for storage and display, n.e.c. in item no. 8418.1, 8418.2, 8418.3 or 8418.4 (chests, cabinets, display counters, show-cases and the like)"
+841861, #Heat pumps: other than air conditioning machines of heading no. 8415"
+841869, #Refrigerating or freezing equipment: n.e.c. in heading no. 8418
+841891, #Refrigerating or freezing equipment: parts, furniture designed to receive refrigerating or freezing equipment
+841899, #Refrigerating or freezing equipment: parts thereof, other than furniture
+711510, #Metal: catalysts in the form of wire cloth or grill, of platinum"
+850440, #Electrical static converters
+854140  #Electrical apparatus: photosensitive, including photovoltaic cells, whether or not assembled in modules or made up into panels, light emitting diodes
+]
 
-#2018 to 2020ArithmeticError
+
+
+#2012 to 2020 
+df_2012 = HS12_2012_final[HS12_2018_final['k'].isin(code)]
+df_2013 = HS12_2013_final[HS12_2018_final['k'].isin(code)]
+df_2014 = HS12_2014_final[HS12_2018_final['k'].isin(code)]
+df_2015 = HS12_2015_final[HS12_2018_final['k'].isin(code)]
+df_2016 = HS12_2016_final[HS12_2018_final['k'].isin(code)]
+df_2017 = HS12_2017_final[HS12_2018_final['k'].isin(code)] 
 df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
 df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
 df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
