@@ -38,7 +38,7 @@ if len(year_range) ==0:
 else:
    
     if product=='Cells and Batteries: primary lithium' and year_range=='2018 to 2020':
-        df_interact = pd.read_csv('./data_pyvis/li_2018_to_2020.csv') 
+        df_interact = pd.read_csv('./network_product_data/TEST_NETWORK_2018.csv') 
         
         # 'df_select = set selection criteria'
         df_select = df_interact.dropna(axis=0)
