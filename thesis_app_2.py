@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Apr  9 17:17:43 2022
+Created on Tue May 10 13:21:40 2022
 
 @author: patta
 """
+
+# -*- coding: utf-8 -*-
+
 #imports
 import streamlit as st
 import streamlit.components.v1 as components
@@ -11,14 +14,14 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import numpy as np
-import matplotlib.pyplot as plt
 
-# import matplotlib as mpl
-# from matplotlib import colors
-# from math import e
-
+import matplotlib as mpl
+from matplotlib import colors
+from math import e
 
 
+
+norm = mpl.colors.Normalize(vmin=-2.5, vmax=2.5)
 
 st.title('Hello Pyvis')
 
@@ -45,17 +48,9 @@ else:
         df_select = df_interact   #.dropna(axis=0)
         
         # Create networkx graph object from pandas dataframe
-        #calculate degree centrality
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total', cmap=plt.cm.Blues)
-        # d = nx.coloring.equitable_color(G, num_colors=3)
-        # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
-        
-        scale=50 # Scaling the size of the nodes by 50*degree
-        d = dict(G.degree)
-        #Updating dict
-        d.update((x, scale*y) for x, y in d.items())
-        #Setting up size attribute
-        nx.set_node_attributes(G,d,'size')
+        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total')
+        d = nx.coloring.equitable_color(G, num_colors=3)
+        nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
         # Initiate PyVis network object
         net_2018_2020 = Network(height="800px", width="100%", directed=True, bgcolor='white', font_color='black')   #
@@ -95,7 +90,6 @@ else:
         net_2018_2020.repulsion(node_distance=420, central_gravity=0.33,
                             spring_length=110, spring_strength=0.10,
                             damping=0.95)
-
        
         # Save and read graph as HTML file (on Streamlit Sharing)
         try:
