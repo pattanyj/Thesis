@@ -1,0 +1,219 @@
+,IndexAvg,country_code,country_name_full,color
+0,1.18,533,Aruba,green
+1,1.37,20,Andorra,green
+2,-1.65,4,Afghanistan,red
+3,-1.14,24,Angola,red
+4,1.13,660,Anguilla,green
+5,-0.26,8,Albania,yellow
+6,0.82,530,Netherlands Antilles,yellow
+7,0.55,784,United Arab Emirates,yellow
+8,-0.19,32,Argentina,yellow
+9,-0.28,51,Armenia,yellow
+10,0.78,16,American Samoa,yellow
+11,0.67,28,Antigua and Barbuda,yellow
+12,1.58,36,Australia,green
+13,1.55,40,Austria,green
+14,-0.83,31,Azerbaijan,yellow
+15,-1.28,108,Burundi,red
+16,1.31,56,Belgium,green
+17,1.31,58,Belgium-Luxembourg,green
+18,-0.23,204,Benin,yellow
+19,-0.38,854,Burkina Faso,yellow
+20,-0.86,50,Bangladesh,yellow
+21,0.18,100,Bulgaria,yellow
+22,0.05,48,Bahrain,yellow
+23,0.95,44,Bahamas,yellow
+24,-0.38,70,Bosnia Herzegovina,yellow
+25,-0.79,112,Belarus,yellow
+26,-0.06,84,Belize,yellow
+27,1.1,60,Bermuda,green
+28,-0.52,68,Plurinational State of Bolivia,yellow
+29,-0.03,76,Brazil,yellow
+30,1.12,52,Barbados,green
+31,0.57,96,Brunei Darussalam,yellow
+32,0.26,64,Bhutan,yellow
+33,-1.84,728,South Sudan,red
+34,0.69,72,Botswana,yellow
+35,-1.39,140,Central African Republic,red
+36,1.62,124,Canada,green
+37,1.75,757,"Switzerland, Liechtenstein",green
+38,1.12,152,Chile,green
+39,-0.49,156,China,yellow
+40,-0.9,384,CÃ´te d'Ivoire,yellow
+41,-0.96,120,Cameroon,yellow
+42,-1.12,178,Congo,red
+43,0.04,184,Cook Islands,yellow
+44,-0.38,170,Colombia,yellow
+45,-0.91,174,Comoros,yellow
+46,0.51,132,Cabo Verde,yellow
+47,0.62,188,Costa Rica,yellow
+48,-0.58,192,Cuba,yellow
+49,1.08,136,Cayman Islands,green
+50,0.98,196,Cyprus,yellow
+51,0.9,203,Czechia,yellow
+52,1.49,276,Germany,green
+53,1.49,280,Former Federal Republic of Germany,green
+54,-0.76,262,Djibouti,yellow
+55,0.66,212,Dominica,yellow
+56,1.78,208,Denmark,green
+57,-0.3,214,Dominican Republic,yellow
+58,-0.87,12,Algeria,yellow
+59,-0.63,218,Ecuador,yellow
+60,-0.66,818,Egypt,yellow
+61,-1.29,232,Eritrea,red
+62,0.95,724,Spain,yellow
+63,1.07,233,Estonia,green
+64,-0.94,231,Ethiopia,yellow
+65,1.84,246,Finland,green
+66,-0.13,242,Fiji,yellow
+67,1.19,251,"France, Monaco",green
+68,0.19,583,Federated State of Micronesia,yellow
+69,-0.54,266,Gabon,yellow
+70,1.46,826,United Kingdom,green
+71,-0.12,268,Georgia,yellow
+72,0.0,288,Ghana,yellow
+73,-1.1,324,Guinea,red
+74,-0.47,270,Gambia,yellow
+75,-1.1,624,Guinea-Bissau,red
+76,-1.29,226,Equatorial Guinea,red
+77,0.5,300,Greece,yellow
+78,0.43,308,Grenada,yellow
+79,1.39,304,Greenland,green
+80,-0.6,320,Guatemala,yellow
+81,0.88,0,0,yellow
+82,0.72,316,Guam,yellow
+83,-0.3,328,Guyana,yellow
+84,1.35,344,"China, Hong Kong Special Administrative Region",green
+85,-0.6,340,Honduras,yellow
+86,0.34,191,Croatia,yellow
+87,-1.19,332,Haiti,red
+88,0.75,348,Hungary,yellow
+89,-0.49,360,Indonesia,yellow
+90,-0.23,699,India,yellow
+91,1.48,372,Ireland,green
+92,-0.98,364,Iran,yellow
+93,-1.57,368,Iraq,red
+94,1.61,352,Iceland,green
+95,0.63,376,Israel,yellow
+96,0.63,381,Italy,yellow
+97,0.08,388,Jamaica,yellow
+98,-0.04,400,Jordan,yellow
+99,1.23,392,Japan,green
+100,-0.56,398,Kazakhstan,yellow
+101,-0.67,404,Kenya,yellow
+102,-0.77,417,Kyrgyzstan,yellow
+103,-0.81,116,Cambodia,yellow
+104,0.15,296,Kiribati,yellow
+105,0.67,659,Saint Kitts and Nevis,yellow
+106,0.75,410,Republic of Korea,yellow
+107,0.09,414,Kuwait,yellow
+108,-0.91,418,Lao People's Dem. Rep.,yellow
+109,-0.65,422,Lebanon,yellow
+110,-1.05,430,Liberia,red
+111,-1.35,434,Libya,red
+112,0.7,662,Saint Lucia,yellow
+113,1.54,757,"Switzerland, Liechtenstein",green
+114,-0.27,144,Sri Lanka,yellow
+115,-0.19,426,Lesotho,yellow
+116,0.78,440,Lithuania,yellow
+117,1.71,442,Luxembourg,green
+118,0.67,428,Latvia,yellow
+119,-0.39,0,0,yellow
+120,0.78,446,"China, Macao Special Administrative Region",yellow
+121,-0.27,504,Morocco,yellow
+122,0.98,0,0,yellow
+123,-0.37,498,Republic of Moldova,yellow
+124,-0.52,450,Madagascar,yellow
+125,-0.18,462,Maldives,yellow
+126,-0.17,484,Mexico,yellow
+127,-0.09,584,Marshall Islands,yellow
+128,-0.19,807,The Former Yugoslav Republic of Macedonia,yellow
+129,-0.54,466,Mali,yellow
+130,1.12,470,Malta,green
+131,-1.42,104,Myanmar,red
+132,-0.04,496,Mongolia,yellow
+133,0.05,499,Montenegro,yellow
+134,-0.47,508,Mozambique,yellow
+135,-0.64,478,Mauritania,yellow
+136,0.85,0,0,yellow
+137,0.76,480,Mauritius,yellow
+138,-0.38,454,Malawi,yellow
+139,0.36,458,Malaysia,yellow
+140,0.32,516,Namibia,yellow
+141,-0.66,562,Niger,yellow
+142,-1.11,566,Nigeria,red
+143,-0.58,558,Nicaragua,yellow
+144,-0.24,570,Niue,yellow
+145,1.69,528,Netherlands,green
+146,1.73,579,"Norway, Svalbard and Jan Mayen",green
+147,-0.74,524,Nepal,yellow
+148,0.18,520,Nauru,yellow
+149,1.78,554,New Zealand,green
+150,0.24,512,Oman,yellow
+151,-0.99,586,Pakistan,yellow
+152,0.12,591,Panama,yellow
+153,0.39,585,Palau,yellow
+154,-0.25,604,Peru,yellow
+155,-0.37,608,Philippines,yellow
+156,-0.61,598,Papua New Guinea,yellow
+157,0.71,616,Poland,yellow
+158,0.67,0,0,yellow
+159,-1.54,408,Democratic People's Republic of Korea,red
+160,1.09,620,Portugal,green
+161,-0.65,600,Paraguay,yellow
+162,0.44,634,Qatar,yellow
+163,0.9,0,0,yellow
+164,0.11,642,Romania,yellow
+165,-0.71,643,Russian Federation,yellow
+166,-0.47,646,Rwanda,yellow
+167,0.5,882,Samoa,yellow
+168,-0.33,682,Saudi Arabia,yellow
+169,-1.55,729,Sudan,red
+170,-1.55,736,Former Sudan,red
+171,-0.16,686,Senegal,yellow
+172,1.52,702,Singapore,green
+173,-0.39,90,Solomon Islands,yellow
+174,-0.81,694,Sierra Leone,yellow
+175,-0.21,222,El Salvador,yellow
+176,1.06,674,San Marino,green
+177,-2.15,706,Somalia,red
+178,-0.23,678,Sao Tome and Principe,yellow
+179,-0.08,740,Suriname,yellow
+180,0.7,703,Slovakia,yellow
+181,0.97,705,Slovenia,yellow
+182,1.73,752,Sweden,green
+183,-0.6,748,Swaziland,yellow
+184,0.25,690,Seychelles,yellow
+185,-1.31,760,Syria,red
+186,-1.3,148,Chad,red
+187,-0.85,768,Togo,yellow
+188,-0.14,764,Thailand,yellow
+189,-1.19,762,Tajikistan,red
+190,-1.35,795,Turkmenistan,red
+191,-0.66,626,Timor-Leste,yellow
+192,-0.06,776,Tonga,yellow
+193,0.21,780,Trinidad and Tobago,yellow
+194,-0.16,788,Tunisia,yellow
+195,-0.2,792,Turkey,yellow
+196,0.31,798,Tuvalu,yellow
+197,0.95,0,0,yellow
+198,-0.45,834,United Republic of Tanzania,yellow
+199,-0.62,800,Uganda,yellow
+200,-0.62,804,Ukraine,yellow
+201,0.79,858,Uruguay,yellow
+202,1.28,842,"USA, Puerto Rico and US Virgin Islands",green
+203,-1.25,860,Uzbekistan,red
+204,0.69,670,Saint Vincent and the Grenadines,yellow
+205,-1.22,862,Venezuela,red
+206,0.84,0,0,yellow
+207,-0.48,704,Viet Nam,yellow
+208,0.16,548,Vanuatu,yellow
+209,-0.74,275,State of Palestine,yellow
+210,1.31,0,0,green
+211,-1.35,887,Yemen,red
+212,-0.32,688,Serbia,yellow
+213,0.29,710,South Africa,yellow
+214,0.29,711,Southern African Customs Union,yellow
+215,-1.65,180,Democratic Republic of the Congo,red
+216,-0.37,894,Zambia,yellow
+217,-1.31,716,Zimbabwe,red
