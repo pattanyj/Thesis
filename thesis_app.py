@@ -107,7 +107,7 @@ else:
 
 
         # Load HTML file in HTML component for display on Streamlit page
-        components.html(HtmlFile.read(), height = 1200,width=1000, scrolling = True)
+        components.html(HtmlFile.read(), height = 800,width=800, scrolling = True)
         
         df_interact = pd.read_csv('./data_pyvis/li_2018_to_2020.csv')
         HtmlFile = open("./html/HS6_850650.html", 'r', encoding='utf-8')
