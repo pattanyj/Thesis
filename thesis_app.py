@@ -46,7 +46,7 @@ else:
         
         # Create networkx graph object from pandas dataframe
         #calculate degree centrality
-        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total', cmap=plt.cm.Blues)
+        G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total', cmap = plt.cm.rdylgn)
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
         
