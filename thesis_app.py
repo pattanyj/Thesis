@@ -67,23 +67,22 @@ else:
         #nodes dataframe
         d = pd.DataFrame.from_dict(d, orient='index').reset_index()
         d.columns = ['country', 'bet_centrality']
-        nodes_s = df_select[['sources', 'country_code_x', 'color_x']]
-        nodes_t = df_select[['targets', 'country_code_y', 'color_y']]
-        nodes_cols = ['country', 'country_code', 'color']
+        nodes_s = df_select[['sources', 'country_code_x', 'IndexAvg_x', 'color_x']]
+        nodes_t = df_select[['targets', 'country_code_y', 'IndexAvg_y', 'color_y']]
+        nodes_cols = ['country', 'country_code', 'WGI', 'color']
         nodes_s.columns = nodes_cols
         nodes_t.columns = nodes_cols
         nodes = pd.concat([nodes_s, nodes_t]).drop_duplicates().reset_index(drop=True)
         nodes = pd.merge(nodes, d, how='inner', on='country')
         
-        
-        #sizes = 
 
         nt = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')
         nt.add_nodes(list(nodes['country_code']),
-                     label = list(nodes['country']),
-                     size = list(nodes['bet_centrality']),
-                     color = list(nodes['color']))
-                     #color  = [matplotlib.colors.rgb2hex(cm.seismic_r(norm(x))) for x in net_nodes['WGI']])
+        label = list(nodes['country']),
+        size = list(nodes['bet_centrality']),
+        color = [matplotlib.colors.rgb2hex(cm.RdYlGn(x)) for x in nodes['WGI']])
+        #color = list(nodes['color']))
+        
         
         for index, row in df_select.iterrows():
             nt.add_edge(row['country_code_x'], row['country_code_y'], weight=row['q'])#/(data_f['q'].sum()))

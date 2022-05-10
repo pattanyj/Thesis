@@ -10,7 +10,7 @@ from pyvis.network import Network
 import networkx as nx
 import matplotlib.pyplot as plt
 
-#%% 2012 to 2014 files
+# 2012 to 2014 files
 #import HS12 files
 HS12_2012 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2012_V202201.csv')
 HS12_2013 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2013_V202201.csv')
@@ -45,13 +45,12 @@ HS12_2014_final = merge_2.merge(HS12_country, left_on='j',right_on='country_code
 HS12_2014_final = HS12_2014_final.rename({'country_name_full':'targets'},axis='columns')
 HS12_2014_final = HS12_2014_final.drop(columns=['country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
-#%% 2015 to 2017 files
+# 2015 to 2017 files
 #import HS12 files
 HS12_2015 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2015_V202201.csv')
 HS12_2016 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2016_V202201.csv')
 HS12_2017 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2017_V202201.csv')
 
-#MERGE
 
 #2015
 merge = HS12_2015.merge(HS12_country, left_on='i',right_on='country_code')
@@ -77,7 +76,7 @@ HS12_2017_final = merge_2.merge(HS12_country, left_on='j',right_on='country_code
 HS12_2017_final = HS12_2017_final.rename({'country_name_full':'targets'},axis='columns')
 HS12_2017_final = HS12_2017_final.drop(columns=['country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
-#%% 2018 to 2020 files
+# 2018 to 2020 files
 #import HS12 files
 HS12_2018 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2018_V202201.csv')
 HS12_2019 = pd.read_csv('./clean_BACI/HS12/clean_BACI_HS12_Y2019_V202201.csv')
@@ -93,7 +92,7 @@ HS12_2018_final = merge.merge(HS12_country, left_on='j',right_on='country_code')
 HS12_2018_final = HS12_2018_final.rename({'country_name_full':'targets'},axis='columns')
 HS12_2018_final = HS12_2018_final.drop(columns=['country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
-# #2019
+#2019
 merge_1 = HS12_2019.merge(HS12_country, left_on='i',right_on='country_code')
 merge_1 = merge_1.rename({'country_name_full':'sources'},axis='columns')
 merge_1 = merge_1.drop(columns=['Unnamed: 0','country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
@@ -109,26 +108,26 @@ HS12_2020_final = merge_2.merge(HS12_country, left_on='j',right_on='country_code
 HS12_2020_final = HS12_2020_final.rename({'country_name_full':'targets'},axis='columns')
 HS12_2020_final = HS12_2020_final.drop(columns=['country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
-#collecting df for lithium ion batteries
+#%%collecting df for lithium ion batteries
 code = [850650]
-libattery_nodes_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
-libattery_nodes_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
-libattery_nodes_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
 
+#2018 to 2020
+df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
+df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
+df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
 
-
-new_df = pd.merge(libattery_nodes_2020, libattery_nodes_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
-libattery_nodes = new_df #.fillna(0)
-libattery_nodes['q'] = libattery_nodes['q_x'] - libattery_nodes['q_y']
-libattery_nodes = libattery_nodes.fillna(0)
-libattery_nodes = libattery_nodes.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
-libattery_nodes.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
+new_df = pd.merge(df_2020, df_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
+network_18_20 = new_df #.fillna(0)
+network_18_20['q'] = network_18_20['q_x'] - network_18_20['q_y']
+network_18_20 = network_18_20.fillna(0)
+network_18_20 = network_18_20.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
+network_18_20.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
 
 # group by exports
-libattery_nodes_exports = libattery_nodes.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
-libattery_nodes_exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
-libattery_nodes_imports = libattery_nodes.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
-libattery_nodes_imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
+exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
+# exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
+imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
+imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
 
 #%%
 c = [840610]
