@@ -52,7 +52,7 @@ else:
         df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y','t','i','j','k','v'])
         df_select = df_select.merge(wgi_color, how='left' ,left_on='targets',right_on='country_name_full')
         df_select = df_select.dropna()    
-        df_select = df_select.where(df_select['q']>=tons_prod)
+        df_select = df_select[df_select['q'] >= tons_prod]
         
         # Create networkx graph object from pandas dataframe
         G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
@@ -68,6 +68,8 @@ else:
         #nodes dataframe
         d = pd.DataFrame.from_dict(d, orient='index').reset_index()
         d.columns = ['country', 'bet_centrality']
+        nodes_s = df_select[['sources', 'country_code_x', 'IndexAvg_x', 'color_x']]
+        nodes_t = df_select[['targets', 'country_code_y', 'IndexAvg_y', 'color_y']]
         nodes_cols = ['country', 'country_code', 'WGI', 'color']
         nodes_s.columns = nodes_cols
         nodes_t.columns = nodes_cols
