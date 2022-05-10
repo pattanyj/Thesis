@@ -87,6 +87,10 @@ else:
         for index, row in df_select.iterrows():
             nt.add_edge(row['country_code_x'], row['country_code_y'], weight=row['q'])#/(data_f['q'].sum()))
         
+        # Generate network with specific layout settings
+        nt.repulsion(node_distance=500, central_gravity=0.01,
+                            spring_length=150, spring_strength=0.20,
+                            damping=0.95)
         
         # Save and read graph as HTML file (on Streamlit Sharing)
         try:
