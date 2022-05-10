@@ -30,7 +30,7 @@ st.title('Cobalt Trade Network')
 st.sidebar.title('Select cobalt product:')
 product=st.sidebar.selectbox('Select one',('Cells and Batteries: primary lithium','X', 'Y'))
 year_range=st.sidebar.selectbox('Select a yearly range',('2018 to 2020','X','Y'))
-trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
+# trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
 tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=100000, step=100)
 
 
@@ -52,6 +52,7 @@ else:
         df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y','t','i','j','k','v'])
         df_select = df_select.merge(wgi_color, how='left' ,left_on='targets',right_on='country_name_full')
         df_select = df_select.dropna()    
+        df_select = df_select.where(df_select['q']>=tons_prod)
         
         # Create networkx graph object from pandas dataframe
         G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
@@ -67,8 +68,6 @@ else:
         #nodes dataframe
         d = pd.DataFrame.from_dict(d, orient='index').reset_index()
         d.columns = ['country', 'bet_centrality']
-        nodes_s = df_select[['sources', 'country_code_x', 'IndexAvg_x', 'color_x']]
-        nodes_t = df_select[['targets', 'country_code_y', 'IndexAvg_y', 'color_y']]
         nodes_cols = ['country', 'country_code', 'WGI', 'color']
         nodes_s.columns = nodes_cols
         nodes_t.columns = nodes_cols
