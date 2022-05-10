@@ -36,17 +36,18 @@ if len(year_range) ==0:
 else:
    
     if product=='Cells and Batteries: primary lithium' and year_range=='2018 to 2020':
-        df_interact = pd.read_csv('./network_product_data/TEST_NETWORK_2018.csv') 
-        
-        # 'df_select = set selection criteria'
-        df_select = df_interact.dropna(axis=0)
-        
+
         #import wgi
+        df_interact = pd.read_csv('./network_product_data/TEST_NETWORK_2018.csv') 
         wgi_color = pd.read_csv('./data_pyvis/wgi_color.csv') 
-        wgi_color = wgi_color.drop(columns=['IndexAvg','country_code'])
+        wgi_color = wgi_color.drop(columns=['country_code'])
+    
+        df_select = df_interact.merge(wgi_color, how='left' ,left_on='sources',right_on='country_name_full')
+        df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y','t','i','j','k','v'])
+        df_select = df_select.merge(wgi_color, how='left' ,left_on='targets',right_on='country_name_full')
+        df_select = df_select.dropna()    
         
         # Create networkx graph object from pandas dataframe
-        #calculate degree centrality
         G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
         # d = nx.coloring.equitable_color(G, num_colors=3)
         # nx.algorithms.coloring.equitable_coloring.is_equitable(G, d)
