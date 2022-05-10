@@ -68,9 +68,9 @@ else:
          
 
         # # Generate network with specific layout settings
-        # net_2018_2020.repulsion(node_distance=420, central_gravity=0.33,
-        #                     spring_length=110, spring_strength=0.10,
-        #                     damping=0.95)
+        net_2018_2020.repulsion(node_distance=500, central_gravity=0.01,
+                            spring_length=150, spring_strength=0.20,
+                            damping=0.95)
 
        
         # Save and read graph as HTML file (on Streamlit Sharing)
