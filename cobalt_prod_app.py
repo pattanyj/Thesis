@@ -74,13 +74,10 @@ if len(year_range) ==0:
     st.text('Please select yearly range to get started')
  
 else:
-   
-
-
-    if year_range=='2015 to 2017':
+    if year_range=='2012 to 2014':
 
         #import wgi
-        df_interact = pd.read_csv('./network_product_data/all_2015_2017_data.csv') 
+        df_interact = pd.read_csv('./network_product_data/all_2012_2014_data.csv') 
         wgi_color = pd.read_csv('./data_pyvis/wgi_color.csv') 
         
         
