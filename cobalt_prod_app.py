@@ -11,12 +11,7 @@ Created on Wed May 11 14:49:54 2022
 
 # @author: patta
 # """
-# -*- coding: utf-8 -*-
-"""
-st.subheader(Part of Jasmine Pattany's thesis projet'
-
-please send inquiries to pattanyj@gmail.com
-"""
+# -
 #imports
 import streamlit as st
 import streamlit.components.v1 as components
@@ -26,6 +21,12 @@ from pyvis.network import Network
 import matplotlib.cm as cm
 import matplotlib
 # import matplotlib as mpl
+
+st.subheader('Part of Jasmine Pattany thesis project')
+
+st.subheader('please send inquiries to pattanyj@gmail.com')
+
+
 
 #import files
 data_2012_2014 =pd.read_csv('./network_product_data/all_2012_2014_data.csv')
