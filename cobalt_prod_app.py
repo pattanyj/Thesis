@@ -87,7 +87,7 @@ else:
         df_select = df_select.dropna()     
         df_select = df_select[df_select['q_total'] >= tons_prod]
         
-        st.caption('Aggregated trade of years: 2015, 2016, and 2017')
+        st.caption('Aggregated trade of years: 2012, 2013, and 2014')
         
         if product== 'HS12: 260500 - Cobalt ores and concentrates (1988-2500)':
             
