@@ -97,7 +97,7 @@ else:
             df_select = df_select[df_select['k'].isin(code)]
             
             # Create networkx graph object from pandas dataframe
-            G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q')
+            G = nx.from_pandas_edgelist(df_select, 'sources', 'targets', 'q_total')
             
             scale=100 # Scaling the size of the nodes by 1*degree
             d = dict(nx.betweenness_centrality(G, normalized = True, endpoints = False))
