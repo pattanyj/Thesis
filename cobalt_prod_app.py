@@ -14,6 +14,7 @@ Created on Wed May 11 14:49:54 2022
 # -*- coding: utf-8 -*-
 """
 Creator: Jasmine Pattany
+
 please send inquiries to pattanyj@gmail.com
 """
 #imports
@@ -85,7 +86,7 @@ else:
         df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y']) #t','i','j','k','v'
         df_select = df_select.merge(wgi_color, how='left' ,left_on='targets',right_on='country_name_full')
         df_select = df_select.dropna()     
-        df_select = df_select[df_select['q'] >= tons_prod]
+        df_select = df_select[df_select['q_total'] >= tons_prod]
         
         if product== 'HS12: 260500 - Cobalt ores and concentrates (1988-2500)':
             
@@ -126,7 +127,7 @@ else:
             
             
             for index, row in df_select.iterrows():
-                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q'])/(df_select['q'].sum()))
+                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()))
             
             # Generate network with specific layout settings
             nt.repulsion(node_distance=300, central_gravity=0.01,
