@@ -37,7 +37,7 @@ st.title('Trade Network for cobalt products')
 # Network._repr_html_ = net_repr_html
 st.sidebar.title('Select cobalt product:')
 product=st.sidebar.selectbox('Select one',('HS12: 260500 - Cobalt ores and concentrates (1988-2500)',
-'HS12: 750300 Waste and scrap, of nickel alloys (excl. ingots or other similar unwrought shapes, of remelted nickel alloys waste and scrap, ashes and residues containing nickel alloys)',
+# 'HS12: 750300 Waste and scrap, of nickel alloys (excl. ingots or other similar unwrought shapes, of remelted nickel alloys waste and scrap, ashes and residues containing nickel alloys)',
 # 810530, #Cobalt waste and scrap (excl. ash and residues containingcobalt)(2002-2500)
 'HS12: 810520 - Cobalt mattes and other intermediate products of cobalt metallurgy; unwrought cobalt; cobalt powders(2002-2500)',
 'HS12: 750110 - Nickel mattes',
