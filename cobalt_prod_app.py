@@ -64,7 +64,7 @@ product=st.sidebar.selectbox('Select one',('HS12: 260500 - Cobalt ores and conce
 'HS12: 850440 - Electrical static converters',
 'HS12: 854140  - Electrical apparatus: photosensitive, including photovoltaic cells, whether or not assembled in modules or made up into panels, light emitting diodes',
 ))
-year_range=st.sidebar.selectbox('Select a yearly range',('2012 to 2014','2015 to 2016','2018 to 2020',))
+year_range=st.sidebar.selectbox('Select a yearly range',('2012 to 2014','2015 to 2017','2018 to 2020',))
 # trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
 tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=500, step=10)
 
