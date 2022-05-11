@@ -83,7 +83,7 @@ else:
         wgi_color = wgi_color.drop(columns=['country_code'])
         
         df_select = df_interact.merge(wgi_color, how='left' ,left_on='sources',right_on='country_name_full')
-        df_select = df_select.drop(columns=['Unnamed: 0','Unnamed: 0_x','Unnamed: 0_y']) #t','i','j','k','v'
+        df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y']) #t','i','j','k','v'
         df_select = df_select.merge(wgi_color, how='left' ,left_on='targets',right_on='country_name_full')
         df_select = df_select.dropna()     
         df_select = df_select[df_select['q'] >= tons_prod]
