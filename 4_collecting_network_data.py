@@ -109,25 +109,25 @@ HS12_2020_final = HS12_2020_final.rename({'country_name_full':'targets'},axis='c
 HS12_2020_final = HS12_2020_final.drop(columns=['country_code','country_name_abbreviation','iso_2digit_alpha','iso_3digit_alpha'])
 
 #%%collecting df for lithium ion batteries
-code = [850650]
+# code = [850650]
 
-#2018 to 2020ArithmeticError
-df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
-df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
-df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
+# #2018 to 2020ArithmeticError
+# df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
+# df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
+# df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
 
-new_df = pd.merge(df_2020, df_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
-network_18_20 = new_df #.fillna(0)
-network_18_20['q'] = network_18_20['q_x'] - network_18_20['q_y']
-network_18_20 = network_18_20.fillna(0)
-network_18_20 = network_18_20.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
-network_18_20.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
+# new_df = pd.merge(df_2020, df_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
+# network_18_20 = new_df #.fillna(0)
+# network_18_20['q'] = network_18_20['q_x'] - network_18_20['q_y']
+# network_18_20 = network_18_20.fillna(0)
+# network_18_20 = network_18_20.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
+# network_18_20.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
 
-# group by exports
-exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
-# exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
-imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
-imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
+# # group by exports
+# exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
+# # exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
+# imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
+# imports.to_csv('./network_product_data/libattery_nodes_imports_2020_subtract_2019.csv')
 
 #%%collecting df for all data
 code = [260500, #Cobalt ores and concentrates (1988-2500)
@@ -143,8 +143,7 @@ code = [260500, #Cobalt ores and concentrates (1988-2500)
 840682, #Turbines: steam and other vapour turbines, (for other than marine propulsion), of an output not exceeding 40MW
 840690, #Turbines: parts of steam and other vapour turbines
 # 841191, #Turbines: parts of turbo-jets and turbo-propellers
-841199, #Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers)
-842112, #Centrifuges: clothes-dryers
+841199, #Turbines: parts of gas turbines (excluding turbo-jets and turbo-propellers)67
 841810, #Refrigerators and freezers: combined refrigerator-freezers, fitted with separate external doors, electric or other"
 # 841821, #Refrigerators: for household use, compression-type, electric or other"
 # 841829, #Refrigerators: household, electric or not, other than compression-type"
@@ -160,31 +159,49 @@ code = [260500, #Cobalt ores and concentrates (1988-2500)
 854140  #Electrical apparatus: photosensitive, including photovoltaic cells, whether or not assembled in modules or made up into panels, light emitting diodes
 ]
 
-
-
 #2012 to 2020 
-df_2012 = HS12_2012_final[HS12_2018_final['k'].isin(code)]
-df_2013 = HS12_2013_final[HS12_2018_final['k'].isin(code)]
-df_2014 = HS12_2014_final[HS12_2018_final['k'].isin(code)]
-df_2015 = HS12_2015_final[HS12_2018_final['k'].isin(code)]
-df_2016 = HS12_2016_final[HS12_2018_final['k'].isin(code)]
-df_2017 = HS12_2017_final[HS12_2018_final['k'].isin(code)] 
+df_2012 = HS12_2012_final[HS12_2012_final['k'].isin(code)]
+df_2013 = HS12_2013_final[HS12_2013_final['k'].isin(code)]
+df_2014 = HS12_2014_final[HS12_2014_final['k'].isin(code)]
+df_2015 = HS12_2015_final[HS12_2015_final['k'].isin(code)]
+df_2016 = HS12_2016_final[HS12_2016_final['k'].isin(code)]
+df_2017 = HS12_2017_final[HS12_2017_final['k'].isin(code)] 
 df_2018 = HS12_2018_final[HS12_2018_final['k'].isin(code)]
 df_2019 = HS12_2019_final[HS12_2019_final['k'].isin(code)]
 df_2020 = HS12_2020_final[HS12_2020_final['k'].isin(code)]
 
-new_df = pd.merge(df_2020, df_2019,  how='left', left_on=['sources','targets'], right_on = ['sources','targets'])
-network_18_20 = new_df #.fillna(0)
-network_18_20['q'] = network_18_20['q_x'] - network_18_20['q_y']
-network_18_20 = network_18_20.fillna(0)
-network_18_20 = network_18_20.drop(columns = ['i_y','j_y','k_y','v_y']).sort_values(by='q', ascending=False)
-network_18_20.to_csv('./network_product_data/libattery_nodes_2020_subtract_2019.csv')
+#%%2012 to 2014 DF
+new_df5 = pd.merge(df_2012, df_2013,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets'])
+new_df6 = pd.merge(new_df5, df_2014,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets']) 
+network_2012_2014 = new_df6.fillna(value={'q_x':0,'q_y':0,'q':0})
+network_2012_2014['q_total'] = network_2012_2014['q_x'] + network_2012_2014['q_y'] + network_2012_2014['q']
+network_2012_2014 = network_2012_2014.drop(columns = ['t_x', 'i','j','i_x','j_x','v_x','q_x',
+                                      't_y','i_y','j_y','v_y','q_y','t','v','q'])
+network_2012_2014.to_csv('./network_product_data/all_2012_2014_data.csv')
 
-# group by exports
-exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
-# exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
-imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
-imports.to_csv('./network_product_data/master_data.csv')
+#2015 to 2017 DF
+new_df = pd.merge(df_2015, df_2016,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets'])
+new_df2 = pd.merge(new_df, df_2017,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets']) 
+network_2015_2017 = new_df2.fillna(value={'q_x':0,'q_y':0,'q':0})
+network_2015_2017['q_total'] = network_2015_2017['q_x'] + network_2015_2017['q_y'] + network_2015_2017['q']
+network_2015_2017 = network_2015_2017.drop(columns = ['t_x', 'i','j','i_x','j_x','v_x','q_x',
+                                      't_y','i_y','j_y','v_y','q_y','t','v','q'])
+network_2015_2017.to_csv('./network_product_data/all_2015_2017_data.csv')
+
+#2018 to 2020 DF
+new_df3 = pd.merge(df_2018, df_2019,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets'])
+new_df4 = pd.merge(new_df3, df_2020,  how='outer', left_on=['k','sources','targets'], right_on = ['k','sources','targets'])
+network_2018_2020 = new_df4.fillna(0)
+network_2018_2020['q_total'] = network_2018_2020['q_x'] + network_2018_2020['q_y'] + network_2018_2020['q']
+network_2018_2020 = network_2018_2020.drop(columns = ['t_x', 'i','j','i_x','j_x','v_x','q_x',
+                                      't_y','i_y','j_y','v_y','q_y','t','v','q'])
+network_2018_2020.to_csv('./network_product_data/all_2018_2020_data.csv')
+
+# # group by exports
+# exports = network_18_20.groupby('sources').sum().reset_index().sort_values(by='q', ascending=False)
+# # exports.to_csv('./network_product_data/libattery_nodes_exports_2020_subtract_2019.csv')
+# imports = network_18_20.groupby('targets').sum().reset_index().sort_values(by='q', ascending=False)
+# # imports.to_csv('./network_product_data/master_data.csv')
 
 
 #%% Biggest importers/exporters NAMES
