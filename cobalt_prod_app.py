@@ -135,6 +135,7 @@ else:
                                 damping=0.95)
             
             # Save and read graph as HTML file (on Streamlit Sharing)
+            # CHANGE NAMES
             try:
                 path = '/tmp'
                 nt.save_graph('HS12_260500.html')
@@ -145,7 +146,13 @@ else:
                 path = '/html'
                 nt.save_graph('HS12_260500.html')
                 HtmlFile = open('HS12_260500.html', 'r', encoding='utf-8')
-    
+            
+            # Load HTML file in HTML component for display on Streamlit page
+            components.html(HtmlFile.read(), height = 800,width=800, scrolling = True)
+            
+            df_interact = pd.read_csv('./data_pyvis/li_2018_to_2020.csv')
+            HtmlFile = open("./html/HS12_260500.html", 'r', encoding='utf-8')
+            
 
         
   
