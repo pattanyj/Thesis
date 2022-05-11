@@ -80,7 +80,7 @@ else:
         #import wgi
         df_interact = pd.read_csv('./network_product_data/all_2012_2014_data.csv') 
         wgi_color = pd.read_csv('./data_pyvis/wgi_color.csv') 
-        wgi_color = wgi_color.drop(columns=['country_code'])
+        # wgi_color = wgi_color.drop(columns=['country_code'])
         
         df_select = df_interact.merge(wgi_color, how='left' ,left_on='sources',right_on='country_name_full')
         df_select = df_select.drop(columns=['Unnamed: 0_x','Unnamed: 0_y']) #t','i','j','k','v'
