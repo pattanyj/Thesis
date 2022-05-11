@@ -13,9 +13,8 @@ Created on Wed May 11 14:49:54 2022
 # """
 # -*- coding: utf-8 -*-
 """
-Created on Sat Apr  9 17:17:43 2022
-
-@author: patta
+Creator: Jasmine Pattany
+please send inquiries to pattanyj@gmail.com
 """
 #imports
 import streamlit as st
