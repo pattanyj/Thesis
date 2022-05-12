@@ -255,8 +255,8 @@ else:
                 nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()))
             
             # Generate network with specific layout settings
-            nt.repulsion(node_distance=500, central_gravity=0.01,
-                                spring_length=150, spring_strength=0.05,
+            nt.repulsion(node_distance=300, central_gravity=0.01,
+                                spring_length=100, spring_strength=0.05,
                                 damping=0.95)
             
             # Save and read graph as HTML file (on Streamlit Sharing)
@@ -273,7 +273,7 @@ else:
                 HtmlFile = open('HS12_12-14_750300.html', 'r', encoding='utf-8')
             
             # Load HTML file in HTML component for display on Streamlit page
-            components.html(HtmlFile.read(), height = 600,width=800, scrolling = True)
+            components.html(HtmlFile.read(), height = 800,width=800, scrolling = True)
            
         if product=='HS12: 750110 - Nickel mattes':
             
