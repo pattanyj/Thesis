@@ -256,7 +256,7 @@ else:
             
             # Generate network with specific layout settings
             nt.repulsion(node_distance=300, central_gravity=0.01,
-                                spring_length=100, spring_strength=0.05,
+                                spring_length=150, spring_strength=0.05,
                                 damping=0.95)
             
             # Save and read graph as HTML file (on Streamlit Sharing)
