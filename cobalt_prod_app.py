@@ -28,7 +28,6 @@ st.subheader('Part of Jasmine Pattany thesis project')
 st.sidebar.markdown('<a href="mailto:jpattany@gmail.com">Email me!</a>', unsafe_allow_html=True)
 
 
-
 #import files
 data_2012_2014 =pd.read_csv('./network_product_data/all_2012_2014_data.csv')
 data_2015_2017 =pd.read_csv('./network_product_data/all_2015_2017_data.csv')
