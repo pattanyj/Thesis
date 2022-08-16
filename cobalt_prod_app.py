@@ -24,8 +24,8 @@ import matplotlib
 
 st.subheader('Part of Jasmine Pattany thesis project')
 # st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
-st.caption('<a href="mailto:jpattany@gmail.com">For any comments or questions please click here.</a>', unsafe_allow_html=True)
-# st.sidebar.markdown('<a href="mailto:jpattany@gmail.com">Contact us !</a>', unsafe_allow_html=True)
+# st.caption('<a href="mailto:jpattany@gmail.com">For any comments or questions please click here.</a>', unsafe_allow_html=True)
+st.sidebar.markdown('<a href="mailto:jpattany@gmail.com">Email me!</a>', unsafe_allow_html=True)
 
 
 
