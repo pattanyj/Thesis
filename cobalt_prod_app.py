@@ -33,7 +33,7 @@ data_2015_2017 =pd.read_csv('./network_product_data/all_2015_2017_data.csv')
 data_2018_2020 =pd.read_csv('./network_product_data/all_2015_2017_data.csv')
 
 st.title('Trade Network for cobalt products')
-
+st.caption('The trade networks are shown as a nodes with directional arrows indicating the direction of trade. The size of the arrow corresponds to the percentage of trade times 20 (quantity/(total quantity)×20). The networks are created with the size of the nodes equal to the betweenness centrality scaled up times 100.')
 # Network._repr_html_ = net_repr_html
 st.sidebar.title('Select cobalt product:')
 product=st.sidebar.selectbox('Select one',('HS12: 260500 - Cobalt ores and concentrates (1988-2500)',
