@@ -23,7 +23,8 @@ import matplotlib
 # import matplotlib as mpl
 
 st.subheader('Part of Jasmine Pattany thesis project')
-st.caption('Please send inquiries to pattanyj@gmail.com')
+# st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
+st.caption('Please send inquiries to [link](jpattany@gmail.com)')
 
 
 
