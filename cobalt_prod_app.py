@@ -122,14 +122,14 @@ else:
     
             nt = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')
             nt.add_nodes(list(nodes['country_code']),
-            label = list(nodes['country']),
+            label = list(nodes['country']), font='100px arial black',
             size = list(nodes['bet_centrality']),
             color = [matplotlib.colors.rgb2hex(cm.RdYlGn(x)) for x in nodes['WGI']])
             #color = list(nodes['color']))
             
             
             for index, row in df_select.iterrows():
-                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()), font='100px arial black')
+                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()))
             
             # Generate network with specific layout settings
             nt.repulsion(node_distance=300, central_gravity=0.01,
