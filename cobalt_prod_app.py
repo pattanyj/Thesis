@@ -122,7 +122,7 @@ else:
     
             nt = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')
             nt.add_nodes(list(nodes['country_code']),
-            label = list(nodes['country']), font='100px arial black',
+            label = list(nodes['country']), label_size='100px',
             size = list(nodes['bet_centrality']),
             color = [matplotlib.colors.rgb2hex(cm.RdYlGn(x)) for x in nodes['WGI']])
             #color = list(nodes['color']))
