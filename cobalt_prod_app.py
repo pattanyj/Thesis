@@ -1859,7 +1859,7 @@ else:
             nodes = pd.merge(nodes, d, how='inner', on='country')
             
     
-            nt = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')
+            nt = Network(height="100px", width="100%", directed=True, bgcolor='white', font_color='black')
             nt.add_nodes(list(nodes['country_code']),
             label = list(nodes['country']),
             size = list(nodes['bet_centrality']),
