@@ -106,7 +106,7 @@ else:
             d = dict(nx.betweenness_centrality(G, normalized = True, endpoints = False))
             #Updating dict
             d.update((x, scale*y) for x, y in d.items())
-            
+
             
             #nodes dataframe
             d = pd.DataFrame.from_dict(d, orient='index').reset_index()
@@ -118,18 +118,17 @@ else:
             nodes_t.columns = nodes_cols
             nodes = pd.concat([nodes_s, nodes_t]).drop_duplicates().reset_index(drop=True)
             nodes = pd.merge(nodes, d, how='inner', on='country')
-            
     
             nt = Network(height="1000px", width="100%", directed=True, bgcolor='white', font_color='black')
             nt.add_nodes(list(nodes['country_code']),
-            label = list(nodes['country']), label_size='100px',
+            label = list(nodes['country']),
             size = list(nodes['bet_centrality']),
             color = [matplotlib.colors.rgb2hex(cm.RdYlGn(x)) for x in nodes['WGI']])
             #color = list(nodes['color']))
             
             
             for index, row in df_select.iterrows():
-                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()))
+                nt.add_edge(row['country_code_x'], row['country_code_y'], width=10*(row['q_total'])/(df_select['q_total'].sum()))
             
             # Generate network with specific layout settings
             nt.repulsion(node_distance=300, central_gravity=0.01,
