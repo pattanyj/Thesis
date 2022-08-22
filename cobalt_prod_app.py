@@ -129,7 +129,7 @@ else:
             
             
             for index, row in df_select.iterrows():
-                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()), font='20px arial black')
+                nt.add_edge(row['country_code_x'], row['country_code_y'], width=20*(row['q_total'])/(df_select['q_total'].sum()), font='100px arial black')
             
             # Generate network with specific layout settings
             nt.repulsion(node_distance=300, central_gravity=0.01,
