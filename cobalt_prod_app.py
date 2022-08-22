@@ -67,7 +67,7 @@ product=st.sidebar.selectbox('Select one',('HS12: 260500 - Cobalt ores and conce
 ))
 year_range=st.sidebar.selectbox('Select a yearly range',('2012 to 2014','2015 to 2017','2018 to 2020',))
 # trade_partners= st.slider('Minimum number of trade Partners', min_value=0, max_value=50, step=5)
-tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=10000, step=10)
+tons_prod= st.slider('Minimum number of product traded (tons)', min_value=0, max_value=15000, step=10)
 
 if len(product) ==0:
     st.text('Please select 1 product to get started')
